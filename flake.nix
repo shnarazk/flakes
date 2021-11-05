@@ -2,7 +2,7 @@
   description = "Emacs Head, the unreleased 28.0";
   inputs.nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
   outputs = { self, nixpkgs }: {
-    defualtPackage.x86_64-darwin =
+    defaultPackage.x86_64-darwin =
       with import nixpkgs { system = "x68_64-darwin"; };
       stdenv.mkDerivation {
         name = "emacs-head";
