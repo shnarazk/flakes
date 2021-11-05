@@ -4,8 +4,9 @@
   outputs = { self, nixpkgs }: {
     defualtPackage.x86_64-darwin =
       with import nixpkgs { system = "x68_64-darwin"; };
-      nixpkgs.emacs.overrideAttrs (attrs: rec {
+      stdenv.mkDerivation {
         name = "emacs-head";
+        pname = "emacs-head";
         # name = "emacs-head-${version}";
         version = "28.0.60";
         src = nixpkgs.fetchFromGitHub {
@@ -34,6 +35,6 @@
         inherit (nixpkgs.darwin.apple_sdk.frameworks)
           AppKit Carbon Cocoa IOKit OSAKit Quartz QuartzCore WebKit
           ImageCaptureCore GSS ImageIO;
-      });
+      };
   };
 }
