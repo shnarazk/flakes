@@ -3,7 +3,7 @@
   inputs.nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
   outputs = { self, nixpkgs }: {
     defaultPackage.x86_64-darwin =
-      with import nixpkgs { system = "x68_64-darwin"; };
+      with import nixpkgs { system = "x86_64-darwin"; };
       stdenv.mkDerivation {
         name = "emacs-head";
         pname = "emacs-head";
