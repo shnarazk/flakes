@@ -32,9 +32,9 @@
         buildInputs = nixpkgs.emacs.buildInputs
                       ++ [ nixpkgs.autoconf nixpkgs.automake nixpkgs.texinfo ]
 	                    ++ [ AppKit Carbon Cocoa IOKit OSAKit Quartz QuartzCore WebKit ImageCaptureCore GSS ImageIO ];
-        inherit (nixpkgs.darwin.apple_sdk.frameworks)
-          AppKit Carbon Cocoa IOKit OSAKit Quartz QuartzCore WebKit
-          ImageCaptureCore GSS ImageIO;
+        # inherit (nixpkgs.darwin.apple_sdk.frameworks)
+        #   AppKit Carbon Cocoa IOKit OSAKit Quartz QuartzCore WebKit
+        #   ImageCaptureCore GSS ImageIO;
       };
   };
 }
