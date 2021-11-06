@@ -6,13 +6,19 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "narHash": "sha256-EimOXBzGSgvWwoqcPOm9KQEyvbeytsffUuKAVZ45cy0=",
-        "path": "/nix/store/aaz75xpv9r7ig7s32sdzkr8bdbvxzb5n-source/emacs-head",
-        "type": "path"
+        "dir": "emacs-head",
+        "lastModified": 1636174099,
+        "narHash": "sha256-w/NNI6jPa1SBkgVvjt2iLn4g6a9kElhli2yAn2AFiVE=",
+        "owner": "shnarazk",
+        "repo": "flakes",
+        "rev": "5f61321d0745c30ec68f536bede9fb1388bcdec8",
+        "type": "github"
       },
       "original": {
-        "path": "/nix/store/aaz75xpv9r7ig7s32sdzkr8bdbvxzb5n-source/emacs-head",
-        "type": "path"
+        "dir": "emacs-head",
+        "owner": "shnarazk",
+        "repo": "flakes",
+        "type": "github"
       }
     },
     "flake-utils": {
@@ -66,13 +72,19 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "narHash": "sha256-WsmjD2tLq0fsrJyEU0vFWaRz/xPNRGhmH+sQvEPDydM=",
-        "path": "/nix/store/aaz75xpv9r7ig7s32sdzkr8bdbvxzb5n-source/kissat",
-        "type": "path"
+        "dir": "kissat",
+        "lastModified": 1636174099,
+        "narHash": "sha256-w/NNI6jPa1SBkgVvjt2iLn4g6a9kElhli2yAn2AFiVE=",
+        "owner": "shnarazk",
+        "repo": "flakes",
+        "rev": "5f61321d0745c30ec68f536bede9fb1388bcdec8",
+        "type": "github"
       },
       "original": {
-        "path": "/nix/store/aaz75xpv9r7ig7s32sdzkr8bdbvxzb5n-source/kissat",
-        "type": "path"
+        "dir": "kissat",
+        "owner": "shnarazk",
+        "repo": "flakes",
+        "type": "github"
       }
     },
     "nixpkgs": {

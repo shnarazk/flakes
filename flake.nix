@@ -2,8 +2,8 @@
   description = "Piling up my flakes";
   inputs = {
     flake-utils.url = github:numtide/flake-utils;
-    emacs-head.url = "./emacs-head";
-    kissat.url = "./kissat";
+    emacs-head.url = github:shnarazk/flakes?dir=emacs-head;
+    kissat.url = github:shnarazk/flakes?dir=kissat;
   };
   outputs = { self, flake-utils, emacs-head, kissat }:
     flake-utils.lib.eachDefaultSystem (system:
