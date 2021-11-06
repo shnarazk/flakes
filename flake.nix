@@ -1,10 +1,11 @@
 {
-  description = "piling up my flakes";
-  inputs.nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
-  inputs.flake-utils.url = github:numtide/flake-utils;
-  inputs.emacs-head.url = "./emacs-head";
-  inputs.kissat.url = "./kissat";
-  outputs = { self, nixpkgs, flake-utils, emacs-head, kissat }:
+  description = "Piling up my flakes";
+  inputs = {
+    flake-utils.url = github:numtide/flake-utils;
+    emacs-head.url = "./emacs-head";
+    kissat.url = "./kissat";
+  };
+  outputs = { self, flake-utils, emacs-head, kissat }:
     flake-utils.lib.eachDefaultSystem (system:
       {
         packages = {
