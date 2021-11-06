@@ -6,12 +6,12 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "narHash": "sha256-daxSvCq4flbtaa+DfbVyfgvXI4LoiYUg/7mldrdxiMI=",
-        "path": "/nix/store/cbn4wl7aa3jznwhfcm4m59zdjf9cs054-source/emacs-head",
+        "narHash": "sha256-G4cFM4v2SkiNNLn9cJjom6ika0C2HLTLAQbtdPAqRu8=",
+        "path": "/nix/store/r5m5vjh183zb1a7jgg8r5yrx2lfb73ba-source/emacs-head",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/cbn4wl7aa3jznwhfcm4m59zdjf9cs054-source/emacs-head",
+        "path": "/nix/store/r5m5vjh183zb1a7jgg8r5yrx2lfb73ba-source/emacs-head",
         "type": "path"
       }
     },
@@ -43,6 +43,36 @@
         "owner": "numtide",
         "repo": "flake-utils",
         "type": "github"
+      }
+    },
+    "flake-utils_3": {
+      "locked": {
+        "lastModified": 1634851050,
+        "narHash": "sha256-N83GlSGPJJdcqhUxSCS/WwW5pksYf3VP1M13cDRTSVA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c91f3de5adaf1de973b797ef7485e441a65b8935",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "kissat": {
+      "inputs": {
+        "flake-utils": "flake-utils_3",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "narHash": "sha256-T1Svb5wLUzK9+Cz2OVS8h285bM2d8vdJzdff/l1vA1o=",
+        "path": "/nix/store/r5m5vjh183zb1a7jgg8r5yrx2lfb73ba-source/kissat",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/r5m5vjh183zb1a7jgg8r5yrx2lfb73ba-source/kissat",
+        "type": "path"
       }
     },
     "nixpkgs": {
@@ -77,11 +107,28 @@
         "type": "github"
       }
     },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1635934775,
+        "narHash": "sha256-DUkBfZjgeefgqyvFxnkZiOOWXgHP5Y1oKp/Zm+LT05Y=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4789953e5c1ef6d10e3ff437e5b7ab8eed526942",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "emacs-head": "emacs-head",
         "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_2"
+        "kissat": "kissat",
+        "nixpkgs": "nixpkgs_3"
       }
     }
   },

@@ -1,7 +1,7 @@
 {
   description = "A 'keep it simple and clean bare metal SAT solver' written in C";
   inputs.nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
-  inputs.flake-utils.url = "github:numtide/flake-utils";
+  inputs.flake-utils.url = github:numtide/flake-utils;
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system: {
       defaultPackage =
@@ -48,7 +48,7 @@
             license = licenses.mit;
             homepage = "http://fmv.jku.at/kissat";
           };
-        }
-    };
+        };
+    });
 }
 
