@@ -15,7 +15,7 @@
             owner = "arminbiere";
             repo = "cadical";
             rev = "rel-${version}";
-            sha256 = "sha256-wsXTtztBWVAB4FfKVliffSvmRD2IpdzBQkDI73N4vXU=";
+            sha256 = "sha256-eVcBak6qC1Fr+qtw0s/SbBmHWsFDI6EC9oG6xxuulIk=";
           };
           outputs = [ "out" "dev" "lib" ];
           doCheck = true;
