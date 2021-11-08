@@ -1,8 +1,8 @@
 {
   description = "Piling up my flakes";
   inputs = {
-    cadical.url     = github:shnarazk/flakes?dir=cadical;
     flake-utils.url = github:numtide/flake-utils;
+    cadical.url     = github:shnarazk/flakes?dir=cadical;
     emacs-head.url  = github:shnarazk/flakes?dir=emacs-head;
     kissat.url      = github:shnarazk/flakes?dir=kissat;
     sat-bench.url   = github:shnarazk/SAT-bench;
