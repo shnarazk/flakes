@@ -4,7 +4,7 @@
     nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
     flake-utils.url = github:numtide/flake-utils;
   };
-  outputs = { self, nixpkgs, flake-utils }: {
+  outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system: {
       defaultPackage =
         with import nixpkgs { system = "${system}"; };
@@ -45,4 +45,6 @@
             license = licenses.mit;
             homepage = "http://fmv.jku.at/cadical";
           };
- }
+        };
+    });
+}
