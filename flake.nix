@@ -8,7 +8,7 @@
     sat-bench.url   = github:shnarazk/SAT-bench;
     splr.url        = github:shnarazk/splr;
   };
-  outputs = { self, flake-utils, emacs-head, kissat, sat-bench, splr }:
+  outputs = { self, flake-utils, cadical, emacs-head, kissat, sat-bench, splr }:
     flake-utils.lib.eachDefaultSystem (system:
       {
         packages = {
