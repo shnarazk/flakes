@@ -12,7 +12,7 @@
           pname = "gratget";
           version = "2021-11-10";
           src = fetchTarball {
-            url = "https://www21.in.tum.de/~lammich/grat/gratchk.tgz";
+            url = "https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz";
             sha256 = "sha256:0klby04xp3rf9ni3n1003shil6xrwpviffpdc8n61390x1662ib9";
           };
           # outputs = [ "out" "dev" "lib" ];
