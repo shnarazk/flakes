@@ -4,19 +4,21 @@
     flake-utils.url = github:numtide/flake-utils;
     cadical.url     = github:shnarazk/flakes?dir=cadical;
     emacs-head.url  = github:shnarazk/flakes?dir=emacs-head;
+    gratgen.url     = github:shnarazk/flakes?dir=gratgen;
     kissat.url      = github:shnarazk/flakes?dir=kissat;
     sat-bench.url   = github:shnarazk/SAT-bench;
     splr.url        = github:shnarazk/splr;
   };
-  outputs = { self, flake-utils, cadical, emacs-head, kissat, sat-bench, splr }:
+  outputs = { self, flake-utils, ... }@inputs:
     flake-utils.lib.eachDefaultSystem (system:
       {
         packages = {
-          cadical    = cadical.defaultPackage.${system};
-          emacs-head = emacs-head.defaultPackage.${system};
-          kissat     = kissat.defaultPackage.${system};
-          sat-bench  = sat-bench.defaultPackage.${system};
-          splr       = splr.defaultPackage.${system};
+          cadical    = inputs.cadical.defaultPackage.${system};
+          emacs-head = inputs.emacs-head.defaultPackage.${system};
+          gratgegn   = inputs.gratgen.defaultPackage.${system};
+          kissat     = inputs.kissat.defaultPackage.${system};
+          sat-bench  = inputs.sat-bench.defaultPackage.${system};
+          splr       = inputs.splr.defaultPackage.${system};
         };
       }
     );
