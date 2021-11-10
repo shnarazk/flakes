@@ -1,6 +1,10 @@
 # flakes
 Collection of my flakes on nixpkgs
 
+```
+nix registry add github:shnarazk/flakes
+```
+
 - [cadical](http://fmv.jku.at/cadical) from https://github.com/arminbiere/cadical
 - [emacs-28.0.60](https://github.com/emacs-mirror/emacs)
 - [kissat](http://fmv.jku.at/kissat) from https://github.com/arminbiere/kissat
