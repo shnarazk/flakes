@@ -13,7 +13,7 @@
           version = "2021-11-10";
           src = fetchTarball {
             url = "https://www21.in.tum.de/~lammich/grat/gratchk.tgz";
-            sha256 = "sha256:1qwnnlldm5phmhs8ay7g42qnsfp2wk4rkkhrxvwk7hq2r8ma88y9";
+            sha256 = "sha256:0klby04xp3rf9ni3n1003shil6xrwpviffpdc8n61390x1662ib9";
           };
           # outputs = [ "out" "dev" "lib" ];
           # checkInputs = [ ];
