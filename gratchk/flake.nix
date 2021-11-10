@@ -9,7 +9,7 @@
       defaultPackage =
         with import nixpkgs { system = "${system}"; };
         stdenv.mkDerivation {
-          pname = "gratget";
+          pname = "gratchk";
           version = "2021-11-10";
           src = fetchTarball {
             url = "https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz";
