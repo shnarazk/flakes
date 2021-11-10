@@ -15,7 +15,7 @@
         packages = {
           cadical    = inputs.cadical.defaultPackage.${system};
           emacs-head = inputs.emacs-head.defaultPackage.${system};
-          gratgegn   = inputs.gratgen.defaultPackage.${system};
+          gratgen    = inputs.gratgen.defaultPackage.${system};
           kissat     = inputs.kissat.defaultPackage.${system};
           sat-bench  = inputs.sat-bench.defaultPackage.${system};
           splr       = inputs.splr.defaultPackage.${system};
