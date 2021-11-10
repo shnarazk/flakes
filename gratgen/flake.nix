@@ -8,10 +8,13 @@
     flake-utils.lib.eachDefaultSystem (system: {
       defaultPackage =
         with import nixpkgs { system = "${system}"; };
-        stdenv.mkDerivation rec {
+        stdenv.mkDerivation {
           pname = "gratget";
           version = "2021-11-10";
-          # src = fetchFromGitHub {
+          src = fetchFromGitHub {
+            url = "https://www21.in.tum.de/~lammich/grat/gratgen.tgz";
+            sha256 = "sha256-8LzV16WZUt581CNJ7qr8ZmGpASFdBE+6T8XStUnpK7Y=";
+          };
           #   owner = "arminbiere";
           #   repo = "kissat";
           #   rev = "abfa45fb782fa3b7c6e2eb6b939febe74d7270b7";
@@ -40,7 +43,7 @@
             maintainers = with maintainers; [ shnarazk ];
             platforms = platforms.unix;
             license = licenses.mit;
-            # homepage = "http://fmv.jku.at/kissat";
+            homepage = "https://www21.in.tum.de/~lammich/grat/";
           };
         };
     });
