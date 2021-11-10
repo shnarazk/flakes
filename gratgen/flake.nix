@@ -11,7 +11,7 @@
         stdenv.mkDerivation {
           pname = "gratget";
           version = "2021-11-10";
-          src = fetchFromGitHub {
+          src = fetchTarball {
             url = "https://www21.in.tum.de/~lammich/grat/gratgen.tgz";
             sha256 = "sha256-8LzV16WZUt581CNJ7qr8ZmGpASFdBE+6T8XStUnpK7Y=";
           };
