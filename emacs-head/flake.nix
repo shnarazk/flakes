@@ -11,12 +11,12 @@
         emacs27.overrideAttrs (attrs: rec {
           name = "emacs-head-${version}";
           pname = "emacs-head";
-          version = "28.0.60-20211111-1";
+          version = "28.0.60-20211112";
           src = fetchFromGitHub {
             owner = "emacs-mirror";
             repo = "emacs";
-            rev = "2963de6540a1dc57399eaf530d8e12c794137a84";
-            sha256 = "sha256-uT1B6X+yFqtAYXKBiXOlSdNBh7ktNJX/HadaWI4F6lo=";
+            rev = "6dae01ad6da1bcbced062c0d46a6759c7a0570e4";
+            sha256 = "1xy91qs6gzl05fpqsxq50p3picw5n4awizm1rbj7ya01zj1adkma";
           };
           patches = [];
           preConfigure = ''
@@ -32,7 +32,11 @@
           nativeBuildInputs = [ pkgconfig autoconf automake texinfo ];
           buildInputs = emacs27.buildInputs
                         ++ [ autoconf automake texinfo ]
-                        ++ lib.optionals stdenv.isDarwin [ darwin.apple_sdk.frameworks.AppKit darwin.apple_sdk.frameworks.Carbon darwin.apple_sdk.frameworks.Cocoa darwin.apple_sdk.frameworks.IOKit darwin.apple_sdk.frameworks.OSAKit darwin.apple_sdk.frameworks.Quartz darwin.apple_sdk.frameworks.QuartzCore darwin.apple_sdk.frameworks.WebKit darwin.apple_sdk.frameworks.ImageCaptureCore darwin.apple_sdk.frameworks.GSS darwin.apple_sdk.frameworks.ImageIO ];
+                        ++ lib.optionals stdenv.isDarwin (
+                          with darwin.apple_sdk.frameworks; [
+                            AppKit Carbon Cocoa GSS ImageIO ImageCaptureCore
+                            IOKit OSAKit Quartz QuartzCore WebKit
+                          ]);
         });
     });
 }
