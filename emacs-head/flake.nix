@@ -11,12 +11,11 @@
         emacs27.overrideAttrs (attrs: rec {
           name = "emacs-head-${version}";
           pname = "emacs-head";
-          version = "28.0.60-20211111";
+          version = "28.0.60-20211111-1";
           src = fetchFromGitHub {
             owner = "emacs-mirror";
             repo = "emacs";
             rev = "2963de6540a1dc57399eaf530d8e12c794137a84";
-            #sha256 = "1111111111111111111111111111111111111111111111111111";
             sha256 = "sha256-uT1B6X+yFqtAYXKBiXOlSdNBh7ktNJX/HadaWI4F6lo=";
           };
           patches = [];
