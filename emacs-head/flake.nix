@@ -11,7 +11,7 @@
         emacs27.overrideAttrs (attrs: rec {
           name = "emacs-head-${version}";
           pname = "emacs-head";
-          version = "28.0.60-${src.rev}";
+          version = "28.0.60-20211111";
           src = fetchFromGitHub {
             owner = "emacs-mirror";
             repo = "emacs";
