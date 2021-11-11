@@ -17,7 +17,7 @@
             repo = "emacs";
             rev = "2963de6540a1dc57399eaf530d8e12c794137a84";
             #sha256 = "1111111111111111111111111111111111111111111111111111";
-            sha256 = "sha256-VfX3A8/B+OTCAi76JmjlNcGHcNaBuKVSNADNDNzQW9E=";
+            sha256 = "sha256-uT1B6X+yFqtAYXKBiXOlSdNBh7ktNJX/HadaWI4F6lo=";
           };
           patches = [];
           preConfigure = ''
