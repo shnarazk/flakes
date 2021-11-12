@@ -13,7 +13,7 @@
           nativeComp = true;
           name = "emacs-head-${version}";
           pname = "emacs-head";
-          version = "28.0.60-20211112-2";
+          version = "28.0.60-20211112-3";
           src = fetchFromGitHub {
             owner = "emacs-mirror";
             repo = "emacs";
