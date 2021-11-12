@@ -38,6 +38,6 @@
                             AppKit Carbon Cocoa GSS ImageIO ImageCaptureCore
                             IOKit OSAKit Quartz QuartzCore WebKit
                           ]);
-        });
+        };
     });
 }
