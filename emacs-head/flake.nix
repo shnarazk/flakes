@@ -8,7 +8,8 @@
     flake-utils.lib.eachDefaultSystem (system: {
       defaultPackage =
         with import nixpkgs { inherit system; };
-        emacs27.overrideAttrs (attrs: rec {
+        emacs27 // rec {
+        # emacs27.overrideAttrs (attrs: rec {
           nativeComp = true;
           name = "emacs-head-${version}";
           pname = "emacs-head";
