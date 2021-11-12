@@ -9,14 +9,15 @@
       defaultPackage =
         with import nixpkgs { inherit system; };
         emacs27.overrideAttrs (attrs: rec {
+          nativeComp = true;
           name = "emacs-head-${version}";
           pname = "emacs-head";
-          version = "28.0.60-20211112";
+          version = "28.0.60-20211112-1";
           src = fetchFromGitHub {
             owner = "emacs-mirror";
             repo = "emacs";
-            rev = "6dae01ad6da1bcbced062c0d46a6759c7a0570e4";
-            sha256 = "1xy91qs6gzl05fpqsxq50p3picw5n4awizm1rbj7ya01zj1adkma";
+            rev = "0d0125daaeb77af5aa6091059ff6d0c1ce9f6cff";
+            sha256 = "1q3gpa03pwgl1ry51m1ldxryna2g0xmy62vxnlxrkiqdkl7ikc3v";
           };
           patches = [];
           preConfigure = ''
@@ -29,10 +30,7 @@
               substituteInPlace $makefile_in --replace /bin/pwd pwd
           done
         '';
-          configureFlags = emacs27.configureFlags ++ ["--with-native-compilation"];
-          nativeBuildInputs = [ pkgconfig autoconf automake texinfo ];
           buildInputs = emacs27.buildInputs
-                        ++ [ autoconf automake texinfo gcc libgccjit ]
                         ++ lib.optionals stdenv.isDarwin (
                           with darwin.apple_sdk.frameworks; [
                             AppKit Carbon Cocoa GSS ImageIO ImageCaptureCore
