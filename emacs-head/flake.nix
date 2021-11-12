@@ -40,7 +40,7 @@
           '';
             configureFlags = emacs27.configureFlags ++ ["--with-native-compilation"];
             buildInputs = emacs27.buildInputs
-                          ++ [ autoconf automake texinfo gcc libgccjit ]
+                          ++ [ autoconf automake texinfo gcc libgccjit zlib ]
                           ++ lib.optionals stdenv.isDarwin (
                             with darwin.apple_sdk.frameworks; [
                               AppKit Carbon Cocoa GSS ImageIO ImageCaptureCore
