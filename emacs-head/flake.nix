@@ -12,7 +12,7 @@
           nativeComp = true;
           name = "emacs-head-${version}";
           pname = "emacs-head";
-          version = "28.0.60-20211112-1";
+          version = "28.0.60-20211112-2";
           src = fetchFromGitHub {
             owner = "emacs-mirror";
             repo = "emacs";
@@ -31,6 +31,7 @@
           done
         '';
           buildInputs = emacs27.buildInputs
+                        ++ [ autoconf automake texinfo gcc libgccjit ]
                         ++ lib.optionals stdenv.isDarwin (
                           with darwin.apple_sdk.frameworks; [
                             AppKit Carbon Cocoa GSS ImageIO ImageCaptureCore
