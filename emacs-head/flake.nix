@@ -29,9 +29,10 @@
               substituteInPlace $makefile_in --replace /bin/pwd pwd
           done
         '';
+          configureFlags = emacs27.configureFlags ++ ["--with-native-compilation"];
           nativeBuildInputs = [ pkgconfig autoconf automake texinfo ];
           buildInputs = emacs27.buildInputs
-                        ++ [ autoconf automake texinfo ]
+                        ++ [ autoconf automake texinfo gcc libgccjit ]
                         ++ lib.optionals stdenv.isDarwin (
                           with darwin.apple_sdk.frameworks; [
                             AppKit Carbon Cocoa GSS ImageIO ImageCaptureCore
