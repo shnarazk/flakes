@@ -25,7 +25,8 @@
             rev = "42d4e24ff3f13ccbd401d93d70ecdee99b88a26d";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
-              sha256 = "1cvvsfm7iwl5dqqbkvawimp7b309bgcki7ww7fiwdlls9axbbkdd";
+              # nix-prefetch-url --type sha256 ${url}
+              sha256 = "15anma0c9bxww9hns4nciinbs2yv2sjcnb5nlzsw1cwci93mrf9z";
             };
             patches = [];
             preConfigure = ''
