@@ -25,19 +25,20 @@
             rev = "d4536ff2572931b105198a85a452a777d6d3a1ff";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
+              # nix flake prefetch ${url}
               # nix-prefetch-url --type sha256 ${url}
               sha256 = "00l1rczh3scfimh8s70a5z8adaddhg1whl76za5i9w361bk9nxq5";
             };
             patches = [];
             preConfigure = ''
-            ./autogen.sh
-                '' + ''
-            substituteInPlace lisp/international/mule-cmds.el \
-              --replace /usr/share/locale ${gettext}/share/locale
-                 for makefile_in in $(find . -name Makefile.in -print); do
-                substituteInPlace $makefile_in --replace /bin/pwd pwd
-            done
-          '';
+              ./autogen.sh
+            '' + ''
+              substituteInPlace lisp/international/mule-cmds.el \
+                --replace /usr/share/locale ${gettext}/share/locale
+                   for makefile_in in $(find . -name Makefile.in -print); do
+                  substituteInPlace $makefile_in --replace /bin/pwd pwd
+              done
+            '';
             configureFlags = emacsNative.configureFlags ++ ["--with-native-compilation"];
             buildInputs = emacsNative.buildInputs
                           ++ [ autoconf automake texinfo gcc libgccjit zlib ]
