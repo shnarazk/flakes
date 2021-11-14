@@ -6,7 +6,7 @@ nix registry add github:shnarazk/flakes
 ```
 
 - [cadical](http://fmv.jku.at/cadical) from https://github.com/arminbiere/cadical
-- [emacs-28.0.60](https://github.com/emacs-mirror/emacs) with native compilation
+- [emacs-28.0.60](https://www.gnu.org/software/emacs/) with native compilation from https://git.savannah.gnu.org/cgit/emacs.git
 - [kissat](http://fmv.jku.at/kissat) from https://github.com/arminbiere/kissat
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz

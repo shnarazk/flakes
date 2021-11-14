@@ -21,12 +21,12 @@
           emacsNative.overrideAttrs (attrs: rec {
             name = "emacs-head-${version}";
             pname = "emacs-head";
-            version = "28.0.60-20211113";
-            rev = "42d4e24ff3f13ccbd401d93d70ecdee99b88a26d";
+            version = "28.0.60-20211114";
+            rev = "d4536ff2572931b105198a85a452a777d6d3a1ff";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
               # nix-prefetch-url --type sha256 ${url}
-              sha256 = "15anma0c9bxww9hns4nciinbs2yv2sjcnb5nlzsw1cwci93mrf9z";
+              sha256 = "00l1rczh3scfimh8s70a5z8adaddhg1whl76za5i9w361bk9nxq5";
             };
             patches = [];
             preConfigure = ''
@@ -38,8 +38,8 @@
                 substituteInPlace $makefile_in --replace /bin/pwd pwd
             done
           '';
-            configureFlags = emacs27.configureFlags ++ ["--with-native-compilation"];
-            buildInputs = emacs27.buildInputs
+            configureFlags = emacsNative.configureFlags ++ ["--with-native-compilation"];
+            buildInputs = emacsNative.buildInputs
                           ++ [ autoconf automake texinfo gcc libgccjit zlib ]
                           ++ lib.optionals stdenv.isDarwin (
                             with darwin.apple_sdk.frameworks; [
