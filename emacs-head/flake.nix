@@ -26,7 +26,7 @@
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
               # nix flake prefetch ${url}
-              sha256 = "sha256-qJTRFAB/jz45IWnsN8wmJyjjrlKJn9QUK+2JzHUrE/Y=";
+              sha256 = "sha256-zz5X5OW747HJirxaF0ChT+/RC+1QXk1PXukFJbmIN0Y=";
             };
             patches = [];
             preConfigure = ''
