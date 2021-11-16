@@ -1,7 +1,7 @@
 {
   description = "A 'keep it simple and clean bare metal SAT solver' written in C";
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
+    nixpkgs.url = github:NixOS/nixpkgs;
     flake-utils.url = github:numtide/flake-utils;
   };
   outputs = { self, nixpkgs, flake-utils }:

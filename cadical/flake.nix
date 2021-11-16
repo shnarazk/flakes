@@ -1,7 +1,7 @@
 {
   description = "Simplified Satisfiability Solver";
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
+    nixpkgs.url = github:NixOS/nixpkgs;
     flake-utils.url = github:numtide/flake-utils;
   };
   outputs = { self, nixpkgs, flake-utils }:

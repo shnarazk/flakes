@@ -1,7 +1,7 @@
 {
   description = "Emacs Head, the unreleased 28.0";
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
+    nixpkgs.url = github:NixOS/nixpkgs;
     flake-utils.url = github:numtide/flake-utils;
   };
   outputs = { self, nixpkgs, flake-utils }:
