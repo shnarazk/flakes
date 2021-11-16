@@ -22,12 +22,11 @@
             name = "emacs-head-${version}";
             pname = "emacs-head";
             version = "28.0.60-20211114";
-            rev = "d4536ff2572931b105198a85a452a777d6d3a1ff";
+            rev = "e852822f3db469c985bf022651f184d6ff2c518a";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
               # nix flake prefetch ${url}
-              # nix-prefetch-url --type sha256 ${url}
-              sha256 = "00l1rczh3scfimh8s70a5z8adaddhg1whl76za5i9w361bk9nxq5";
+              sha256 = "sha256-qJTRFAB/jz45IWnsN8wmJyjjrlKJn9QUK+2JzHUrE/Y=";
             };
             patches = [];
             preConfigure = ''
