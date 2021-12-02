@@ -21,13 +21,13 @@
           emacsNative.overrideAttrs (attrs: rec {
             name = "emacs-head-${version}";
             pname = "emacs-head";
-            version = "28.0.60-20211127";
-            rev = "cfaf681d3d292ceccc89c0eaaa47827665115dc6";
+            version = "28.0.90-20211202";
+            rev = "f38dfa56a0cfef77c2b0d8bb2869642a4e3b2ae4";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
               # nix flake prefetch ${url}
               # nix-prefetch-url --type sha256 --unpack $url
-              sha256 = "sha256-g4RjAS9OH7/QTl2OI6Gkp3Dwpbui7XC9jm2Ws3rkF+w=";
+              sha256 = "0jlvxg0k744zyvdhpvwf2hv3fxc7b31iapjwlm4h3qxsgpjh7gvm";
             };
             patches = [];
             preConfigure = ''
