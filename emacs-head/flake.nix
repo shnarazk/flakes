@@ -21,8 +21,8 @@
           emacsNative.overrideAttrs (attrs: rec {
             name = "emacs-head-${version}";
             pname = "emacs-head";
-            version = "28.0.90-20211228-1";
-            rev = "	c0815aca18e210e1590e47b78a01e5dd63401775";
+            version = "28.0.90-20211228-2";
+            rev = "c0815aca18e210e1590e47b78a01e5dd63401775";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
               # nix flake prefetch ${url}
