@@ -21,7 +21,7 @@
           emacsNative.overrideAttrs (attrs: rec {
             name = "emacs-head-${version}";
             pname = "emacs-head";
-            version = "28.0.91-20220109-1";
+            version = "28.0.91-20220109-2";
             rev = "c54fda643d4407aed729a6a84fdd28c69373580b";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
