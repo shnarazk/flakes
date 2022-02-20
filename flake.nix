@@ -5,7 +5,7 @@
     cadical.url           = github:shnarazk/flakes?dir=cadical;
     cargo-instruments.url = github:shnarazk/flakes?dir=cargo-instruments;
     emacs-head.url        = github:shnarazk/flakes?dir=emacs-head;
-    fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;;
+    fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     sat-bench.url         = github:shnarazk/SAT-bench;
