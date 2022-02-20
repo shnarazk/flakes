@@ -18,7 +18,7 @@
           cadical           = inputs.cadical.defaultPackage.${system};
           cargo-instruments = inputs.cargo-instruments.defaultPackage.${system};
           emacs-head        = inputs.emacs-head.defaultPackage.${system};
-          fukuoka-c19       = inputs.fukuoka-covid19.defaultPackage.${system};
+          fukuoka-c19       = inputs.fukuoka-c19.defaultPackage.${system};
           gratchk           = inputs.gratchk.defaultPackage.${system};
           gratgen           = inputs.gratgen.defaultPackage.${system};
           sat-bench         = inputs.sat-bench.defaultPackage.${system};
