@@ -8,6 +8,7 @@
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
+    helix.url             = github:shnarazk/helix;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr;
   };
@@ -21,6 +22,7 @@
           fukuoka-c19       = inputs.fukuoka-c19.defaultPackage.${system};
           gratchk           = inputs.gratchk.defaultPackage.${system};
           gratgen           = inputs.gratgen.defaultPackage.${system};
+          helix             = inputs.helix.defaultPackage.${system};
           sat-bench         = inputs.sat-bench.defaultPackage.${system};
           splr              = inputs.splr.defaultPackage.${system};
         };

@@ -11,7 +11,7 @@ nix registry add github:shnarazk/flakes
 - https://github.com/shnarazk/learn-dioxus
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
-
+- [helix](https://github.com/shnarazk/helix)
 - [sat-bench](https://github.com/shnarazk/SAT-bench)
 - [splr](https://github.com/shnarazk/splr)
 
