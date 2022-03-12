@@ -21,11 +21,11 @@
           emacsNative.overrideAttrs (attrs: rec {
             name = "emacs-head-${version}";
             pname = "emacs-head";
-            version = "28.0.91-20220227-1";
-            rev = "a50f8dec092ecc82814fd21ed2cd1bfdc693655d";
+            version = "28.0.92-20220312-1";
+            rev = "5ba9c8c364f652221a0ac9ed918a831e122581db";
             src = fetchurl {
               url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
-              sha256 = "sha256-VBqG6JIeO/3Vy3LtMJ+qLkNzUeIC+qQwTo5gEngCtvk=";
+              sha256 = "sha256-eAYci0eryXLY6+CgfmktaTTQlY7uAkhPeHklqjd23NY=";
             };
             patches = [];
             preConfigure = ''
