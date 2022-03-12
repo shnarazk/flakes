@@ -17,15 +17,21 @@
       {
         packages = {
           cadical           = inputs.cadical.defaultPackage.${system};
-          cargo-instruments = inputs.cargo-instruments.defaultPackage.${system};
           emacs-head        = inputs.emacs-head.defaultPackage.${system};
           fukuoka-c19       = inputs.fukuoka-c19.defaultPackage.${system};
-          gratchk           = inputs.gratchk.defaultPackage.${system};
           gratgen           = inputs.gratgen.defaultPackage.${system};
-          helix             = inputs.helix.defaultPackage.${system};
+          # helix             = inputs.helix.defaultPackage.${system};
           sat-bench         = inputs.sat-bench.defaultPackage.${system};
           splr              = inputs.splr.defaultPackage.${system};
-        };
+        }
+        // (
+          if system == "x86_64-darwin" || system == "aaarch64-darwin" then {
+            cargo-instruments = inputs.cargo-instruments.defaultPackage.${system};
+            gratchk           = inputs.gratchk.defaultPackage.${system};
+            helix             = inputs.helix.defaultPackage.${system};
+          } else {
+          });
       }
     );
 }
+ 
