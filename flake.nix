@@ -25,7 +25,7 @@
           splr              = inputs.splr.defaultPackage.${system};
         }
         // (
-          if system == "x86_64-darwin" || system == "aaarch64-darwin" then {
+          if system == "x86_64-darwin" || system == "aarch64-darwin" then {
             cargo-instruments = inputs.cargo-instruments.defaultPackage.${system};
             gratchk           = inputs.gratchk.defaultPackage.${system};
             helix             = inputs.helix.defaultPackage.${system};
