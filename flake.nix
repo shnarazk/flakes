@@ -10,7 +10,6 @@
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr;
-    tmux.url              = github:shnarazk/flakes?dir=tmux;
   };
   outputs = { self, flake-utils, ... }@inputs:
     flake-utils.lib.eachDefaultSystem (system:
@@ -22,10 +21,9 @@
           gratgen           = inputs.gratgen.defaultPackage.${system};
           sat-bench         = inputs.sat-bench.defaultPackage.${system};
           splr              = inputs.splr.defaultPackage.${system};
-          tmux              = inputs.tmux.defaultPackage.${system};
         }
         // (
-          if system == "x86_64-darwin" || system == "aarch64-darwin" then {
+          if system == "x86_64-darwin" then { # || system == "aarch64-darwin"
             cargo-instruments = inputs.cargo-instruments.defaultPackage.${system};
             gratchk           = inputs.gratchk.defaultPackage.${system};
           } else {
