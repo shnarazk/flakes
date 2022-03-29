@@ -20,7 +20,7 @@
             cadical           = inputs.cadical.packages.${system}.default;
             emacs-head        = inputs.emacs-head.packages.${system}.default;
             fukuoka-c19       = inputs.fukuoka-c19.packages.${system}.default;
-            # gratgen           = inputs.gratgen.packages.${system}.default;
+            gratgen           = inputs.gratgen.packages.${system}.default;
             sat-bench         = inputs.sat-bench.packages.${system}.default;
             splr              = inputs.splr.packages.${system}.default;
           };
