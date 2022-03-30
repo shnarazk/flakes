@@ -1,10 +1,7 @@
 {
   description = "Check DRAT certificate and emit GRAT certificate.";
-  inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flake-utils.url = github:numtide/flake-utils;
-  };
-  outputs = { self, nixpkgs, flake-utils }:
+  inputs.nixpkgs.url = github:NixOS/nixpkgs;
+  outputs = { self, nixpkgs }:
   {
     packages = builtins.listToAttrs
       (map

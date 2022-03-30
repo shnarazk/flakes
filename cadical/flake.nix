@@ -1,7 +1,7 @@
 {
   description = "Simplified Satisfiability Solver";
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs }:
     {
       packages = builtins.listToAttrs
         (map

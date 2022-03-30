@@ -1,7 +1,7 @@
 {
   description = "Easily profile your rust crate with Xcode [Instruments]";
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
-  outputs = { self, nixpkgs, flake-utils }: {
+  outputs = { self, nixpkgs }: {
     packages = builtins.listToAttrs
       (map
         (system: 
