@@ -23,13 +23,18 @@
             gratgen           = inputs.gratgen.packages.${system}.default;
             sat-bench         = inputs.sat-bench.packages.${system}.default;
             splr              = inputs.splr.packages.${system}.default;
-          };
-          # // (
-          #   if system == "x86_64-darwin" then { # || system == "aarch64-darwin"
-          #     cargo-instruments = inputs.cargo-instruments.${system}.default;
-          #     gratchk           = inputs.gratchk.${system}.default;
-          #   } else {
-          #   });
+          }
+          // (
+            if system == "x86_64-darwin" || system == "x86_64-linux" then {
+              # cargo-instruments = inputs.cargo-instruments.packages.${system}.default;
+              gratchk           = inputs.gratchk.packages.${system}.default;
+            } else {
+            })
+          // (
+            if system == "aarch64-darwin" || system == "x86_64-darwin" then {
+              cargo-instruments = inputs.cargo-instruments.packages.${system}.default;
+            } else {
+            });
         }
       )
     ;
