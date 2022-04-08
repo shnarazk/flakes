@@ -65,11 +65,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1649393357,
-        "narHash": "sha256-bHhI5knDiIOmH/pI79x3OnaKTffJOiIQNhqbp2eZ0Do=",
+        "lastModified": 1649439138,
+        "narHash": "sha256-/YIkVLVybhmO8Dv2oslGM6+M8NGn+bjia7XBawWgcUg=",
         "owner": "shnarazk",
         "repo": "fukuoka-c19.rs",
-        "rev": "bc28a542b65751372047039b5f1253411e67afbb",
+        "rev": "c98afa6802e5367b8d43c2eda0dc3be462a7dc52",
         "type": "github"
       },
       "original": {
