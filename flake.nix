@@ -7,6 +7,7 @@
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
+    nushell.url           = github:shnarazk/flakes?dir=nushell;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr?ref=exp-penetration-enegry-20220321;
   };
