@@ -210,6 +210,21 @@
     },
     "nixpkgs_7": {
       "locked": {
+        "lastModified": 1650064126,
+        "narHash": "sha256-iGmFC12vhM3oHygljrHwQxF4jERy8NMmFktj4FktwAk=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "aef721164447db389ca151702e932e981b0d104a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_8": {
+      "locked": {
         "lastModified": 1648378779,
         "narHash": "sha256-tiBo2vhsPKRhEs5Z5ZrJ6EWAjh0nb7dLCS/fFRO0yFE=",
         "owner": "NixOS",
@@ -238,6 +253,26 @@
         "type": "github"
       }
     },
+    "nushell": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_7"
+      },
+      "locked": {
+        "dir": "nushell",
+        "lastModified": 1650064773,
+        "narHash": "sha256-rI26WTGkK0ODGCk20pd0WYGyYqxJtRkmaEUFDXWOCdk=",
+        "owner": "shnarazk",
+        "repo": "flakes",
+        "rev": "83f2bdc3a7d9139eb3ab14ac207116f73e461163",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nushell",
+        "owner": "shnarazk",
+        "repo": "flakes",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "cadical": "cadical",
@@ -246,13 +281,14 @@
         "fukuoka-c19": "fukuoka-c19",
         "gratchk": "gratchk",
         "gratgen": "gratgen",
+        "nushell": "nushell",
         "sat-bench": "sat-bench",
         "splr": "splr"
       }
     },
     "sat-bench": {
       "inputs": {
-        "nixpkgs": "nixpkgs_7"
+        "nixpkgs": "nixpkgs_8"
       },
       "locked": {
         "lastModified": 1649260288,
