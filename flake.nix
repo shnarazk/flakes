@@ -7,7 +7,6 @@
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
-    nushell.url           = github:shnarazk/flakes?dir=nushell;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr?ref=exp-penetration-enegry-20220321;
   };
@@ -22,7 +21,6 @@
               emacs-head  = inputs.emacs-head.packages.${system}.default;
               fukuoka-c19 = inputs.fukuoka-c19.packages.${system}.default;
               gratgen     = inputs.gratgen.packages.${system}.default;
-              nushell     = inputs.nushell.packages.${system}.default;
               sat-bench   = inputs.sat-bench.packages.${system}.default;
               splr        = inputs.splr.packages.${system}.default;
             } // (if system == "x86_64-darwin" || system == "x86_64-linux" then {
