@@ -16,10 +16,10 @@
                     src = fetchFromGitHub {
                         owner = pname;
                         repo = pname;
-                        rev = version;
-                        sha256 = "1qfqn22qabm0jrr4yqq9rb29k8qj9w9g0j9x4n8h0zp28vn7c2bq";
+                        rev = "0.61.0";
+                        sha256 = "sha256-1wTMXlFViJh/x+W7WqZ9uf1SV6X4er6SWO6qTjf9C94=";
                     };
-                    cargoSha256 = "sha256-gZ91rRyp5a7MjG9yM0pGCBYtM4GylZg7Sg9wCiB+SW0=";
+                    cargoSha256 = "0000000000000000000000000000000000000000000000000000";
                 });
               };
             })
