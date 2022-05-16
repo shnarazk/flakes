@@ -18,14 +18,14 @@
               name = system;
               value = {
                 default = let
-                  emacsNative = emacs27.override {
+                  emacsNative = emacs28.override {
                     nativeComp = true;
                   };
                 in
                   emacsNative.overrideAttrs (attrs: rec {
                     name = "emacs-head-${version}";
                     pname = "emacs-head";
-                    version = "28.1-20220404-1";
+                    version = "29.0.50-20220516-1";
                     rev = "9b3481dd61735b3155a200e0c4d49f0092f52e03";
                     src = fetchurl {
                       url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-${rev}.tar.gz";
