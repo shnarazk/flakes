@@ -8,7 +8,7 @@
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     sat-bench.url         = github:shnarazk/SAT-bench;
-    splr.url              = github:shnarazk/splr?ref=exp-penetration-enegry-20220321;
+    splr.url              = github:shnarazk/splr;
   };
   outputs = inputs: {
     packages = builtins.listToAttrs
