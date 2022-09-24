@@ -1,7 +1,7 @@
 {
   description = "Piling up my flakes";
   inputs = {
-    alacritty.url         = github:shnarazk/flakes?dir=alacritty;
+    alacritty-head.url    = github:shnarazk/flakes?dir=alacritty;
     cadical.url           = github:shnarazk/flakes?dir=cadical;
     cargo-instruments.url = github:shnarazk/flakes?dir=cargo-instruments;
     emacs-head.url        = github:shnarazk/flakes?dir=emacs-head;
@@ -18,15 +18,15 @@
           {
             name = system;
             value = {
-              alacritty   = inputs.alacritty.packages.${system}.default;
-              cadical     = inputs.cadical.packages.${system}.default;
-              emacs-head  = inputs.emacs-head.packages.${system}.default;
-              fukuoka-c19 = inputs.fukuoka-c19.packages.${system}.default;
-              gratgen     = inputs.gratgen.packages.${system}.default;
-              sat-bench   = inputs.sat-bench.packages.${system}.default;
-              splr        = inputs.splr.packages.${system}.default;
+              alacritty-head     = inputs.alacritty.packages.${system}.default;
+              cadical            = inputs.cadical.packages.${system}.default;
+              emacs-head         = inputs.emacs-head.packages.${system}.default;
+              fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
+              gratgen            = inputs.gratgen.packages.${system}.default;
+              sat-bench          = inputs.sat-bench.packages.${system}.default;
+              splr               = inputs.splr.packages.${system}.default;
             } // (if system == "x86_64-darwin" || system == "x86_64-linux" then {
-              gratchk      = inputs.gratchk.packages.${system}.default;
+              gratchk            = inputs.gratchk.packages.${system}.default;
             } else {
             }) // (if system == "x86_64-darwin" || system == "aarch64-darwin" then {
                cargo-instruments = inputs.cargo-instruments.packages.${system}.default;
