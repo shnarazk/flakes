@@ -1,6 +1,7 @@
 {
   description = "Piling up my flakes";
   inputs = {
+    alacritty.url         = github:shnarazk/flakes?dir=alacritty;
     cadical.url           = github:shnarazk/flakes?dir=cadical;
     cargo-instruments.url = github:shnarazk/flakes?dir=cargo-instruments;
     emacs-head.url        = github:shnarazk/flakes?dir=emacs-head;
@@ -17,6 +18,7 @@
           {
             name = system;
             value = {
+              alacritty   = inputs.alacritty.packages.${system}.default;
               cadical     = inputs.cadical.packages.${system}.default;
               emacs-head  = inputs.emacs-head.packages.${system}.default;
               fukuoka-c19 = inputs.fukuoka-c19.packages.${system}.default;
