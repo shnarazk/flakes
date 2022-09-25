@@ -2,7 +2,7 @@
 Collection of my flakes on nixpkgs
 
 ```
-nix registry add github:shnarazk/flakes
+nix registry add NAME github:shnarazk/flakes
 ```
 
 - [alacritty-0.11.0](https://alacritty.org) from https://github.com/alacritty/alacritty
