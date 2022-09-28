@@ -20,6 +20,6 @@ And some my programs:
 
 ## Retired
 
-- (in near future) [cadical](http://fmv.jku.at/cadical) from https://github.com/arminbiere/cadical
+- [cadical](http://fmv.jku.at/cadical) from https://github.com/arminbiere/cadical
 - [kissat](http://fmv.jku.at/kissat) was merged into nixpkgs
 
