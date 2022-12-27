@@ -14,26 +14,26 @@
                   cbqn-bytecode-files = fetchFromGitHub {
                     name = "cbqn-bytecode-files";
                     owner = "dzaima";
-                    repo = "CBQN";
-                    rev = "3df8ae563a626ff7ae0683643092f0c3bc2481e5";
-                    hash = "sha256:0rh9qp1bdm9aa77l0kn9n4jdy08gl6l7898lncskxiq9id6xvyb8";
+                    repo = "cbqnBytecode";
+                    rev = "8d2a4a27c94535ecfa59270270b817f1980de3ad";
+                    hash = "sha256-7WiOthsQ314rXP+cjw9JRbPur00qkc8LVqUmKqdxn2U";
                   };
                   replxx-submodule = fetchFromGitHub {
                     name = "replxx-submodule";
                     owner = "dzaima";
                     repo = "replxx";
-                    rev = "d254e695e4a751fefa09eef52b1452b1835d05";
-                    hash = "sha256-FrHAHSamAV4dBwu6iKJ0o4bnVYdR+2NHRQsB20zULq4=";
+                    rev = "ba94c293caad52486df8712e808783df9a8f4501";
+                    hash = "sha256-pMLvURksj/5k5b6BTwWxjomoROMOE5+GRjyaoqu/iYE";
                   };
                 in 
                 stdenv.mkDerivation rec {
                   pname = "cbqn";
-                  version = "0.pre+date=2022-11-27"; 
+                  version = "0.pre+date=2022-12-11"; 
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
-                    rev = "dbc7c83f7085d05e87721bedf1ee38931f671a8e";
-                    hash = "sha256:0nal1fs9y7nyx4d5q1qw868lxk7mivzw2y16wc3hw97pq4qf0dpb";
+                    rev = "982a54d98a4d2a37f40d0cc711b0ad5e396613e3";
+                    hash = "sha256-12R1KcPq88Bu9eI5QrHMfl2VEqqLCcS//DcJlxo4esM";
                   }; 
                   nativeBuildInputs = [ pkg-config ]; 
                   buildInputs = [ libffi ]; 
@@ -48,7 +48,7 @@
                   preBuild = ''
                     # Purity: avoids git downloading bytecode files
                     mkdir -p build/bytecodeLocal/gen
-                    cp ${cbqn-bytecode-files}/src/gen/{compiles,explain,formatter,runtime0,runtime1,src} build/bytecodeLocal/gen/
+                    cp ${cbqn-bytecode-files}/gen/{compiles,explain,formatter,runtime0,runtime1,src} build/bytecodeLocal/gen/
                     cp -r ${replxx-submodule} build/replxxLocal/
                   ''
                   # Need to adjust ld flags for darwin manually
