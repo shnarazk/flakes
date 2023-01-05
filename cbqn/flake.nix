@@ -9,7 +9,7 @@
           {
             name = system;
             value = {
-              default = 
+              default =
                 let
                   cbqn-bytecode-files = fetchFromGitHub {
                     name = "cbqn-bytecode-files";
@@ -25,26 +25,26 @@
                     rev = "ba94c293caad52486df8712e808783df9a8f4501";
                     hash = "sha256-pMLvURksj/5k5b6BTwWxjomoROMOE5+GRjyaoqu/iYE";
                   };
-                in 
+                in
                 stdenv.mkDerivation rec {
                   pname = "cbqn";
-                  version = "0.pre+date=2022-12-11"; 
+                  version = "0.pre+date=2023-01-05";
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
-                    rev = "982a54d98a4d2a37f40d0cc711b0ad5e396613e3";
-                    hash = "sha256-12R1KcPq88Bu9eI5QrHMfl2VEqqLCcS//DcJlxo4esM";
-                  }; 
-                  nativeBuildInputs = [ pkg-config ]; 
-                  buildInputs = [ libffi ]; 
-                  dontConfigure = true; 
+                    rev = "18459482c9effa334bfbeb6e444a2a2830ead7c9";
+                    hash = "sha256-VBZ+oLJLiARZbBTxutWf22cEPbvQXCNCqAvMB4SySWQ=";
+                  };
+                  nativeBuildInputs = [ pkg-config ];
+                  buildInputs = [ libffi ];
+                  dontConfigure = true;
                   postPatch = ''
                     sed -i '/SHELL =.*/ d' makefile
-                  ''; 
+                  '';
                   makeFlags = [
                     "CC=${stdenv.cc.targetPrefix}cc"
                     "REPLXX=1"
-                  ]; 
+                  ];
                   preBuild = ''
                     # Purity: avoids git downloading bytecode files
                     mkdir -p build/bytecodeLocal/gen
@@ -53,16 +53,16 @@
                   ''
                   # Need to adjust ld flags for darwin manually
                   # https://github.com/dzaima/CBQN/issues/26
-                  + lib.optionalString stdenv.hostPlatform.isDarwin '' makeFlagsArray+=(LD_LIBS="-ldl -lffi") ''; 
+                  + lib.optionalString stdenv.hostPlatform.isDarwin '' makeFlagsArray+=(LD_LIBS="-ldl -lffi") '';
                   installPhase = ''
-                     runHook preInstall 
+                     runHook preInstall
                      mkdir -p $out/bin/
                      cp BQN -t $out/bin/
                      # note guard condition for case-insensitive filesystems
                      [ -e $out/bin/bqn ] || ln -s $out/bin/BQN $out/bin/bqn
-                     [ -e $out/bin/cbqn ] || ln -s $out/bin/BQN $out/bin/cbqn 
+                     [ -e $out/bin/cbqn ] || ln -s $out/bin/BQN $out/bin/cbqn
                      runHook postInstall
-                  '';  
+                  '';
                   meta = with lib; {
                     description = "BQN implementation in C";
                     homepage = "https://github.com/dzaima/CBQN/";
@@ -70,7 +70,7 @@
                     maintainers = with maintainers; [ AndersonTorres sternenseemann synthetica shnarazk ];
                     platforms = platforms.all;
                   };
-                }; 
+                };
             };
           }
         )
@@ -79,4 +79,4 @@
     ;
   };
 }
- 
+
