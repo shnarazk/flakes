@@ -21,6 +21,7 @@
                 ps.python-lsp-server
                 ps.scipy
                 ps.scikit-learn
+                ps.tkinter
               ]); };
             # value = { default = python311Full; };
             # withPackages = (ps: [ ps.sckit-learn ]);
