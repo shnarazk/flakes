@@ -14,9 +14,13 @@
           with import nixpkgs { inherit system; }; {
             name = system;
             value = { default = python311Full.withPackages(ps: 
-              [ ps.numpy
-                ps.scikit-learn
+              [
+                ps.matplotlib
+                ps.numpy
+                ps.pillow
                 ps.python-lsp-server
+                ps.scipy
+                ps.scikit-learn
               ]); };
             # value = { default = python311Full; };
             # withPackages = (ps: [ ps.sckit-learn ]);
