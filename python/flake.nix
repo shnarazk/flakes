@@ -3,8 +3,8 @@
   outputs = { self, nixpkgs }: {
     # overlays = {
     #   default = final: prev: {
-    #     python311Full = prev.python311Full.override {
-    #       withPackages = (ps: [ ps.sckit-learn ]);
+    #     mypython = prev.python311Full.override {
+    #       withPackages = (ps: [ ps.scikit-learn ]);
     #     };
     #   };
     # };
@@ -13,7 +13,14 @@
         (system:
           with import nixpkgs { inherit system; }; {
             name = system;
-            value = { default = python311Full; };
+            value = { default = python311Full.withPackages(ps: 
+              [ ps.numpy
+                ps.scikit-learn
+                ps.python-lsp-server
+              ]); };
+            # value = { default = python311Full; };
+            # withPackages = (ps: [ ps.sckit-learn ]);
+          }
         )
         [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ]
       )
