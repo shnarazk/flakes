@@ -21,10 +21,8 @@
                 ps.python-lsp-server
                 ps.scipy
                 ps.scikit-learn
-                ps.tkinter
+                # ps.tkinter
               ]); };
-            # value = { default = python311Full; };
-            # withPackages = (ps: [ ps.sckit-learn ]);
           }
         )
         [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ]

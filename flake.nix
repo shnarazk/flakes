@@ -8,7 +8,7 @@
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
-    python.url            = github:shnarazk/flakes?dir=python;
+    mypython.url          = github:shnarazk/flakes?dir=python;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr;
   };
@@ -25,7 +25,7 @@
               fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
               gratgen            = inputs.gratgen.packages.${system}.default;
               sat-bench          = inputs.sat-bench.packages.${system}.default;
-              python             = inputs.python.packages.${system}.default;
+              mypython           = inputs.mypython.packages.${system}.default;
               splr               = inputs.splr.packages.${system}.default;
             } // (if system == "x86_64-darwin" || system == "x86_64-linux" then {
               gratchk            = inputs.gratchk.packages.${system}.default;
