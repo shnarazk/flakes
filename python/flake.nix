@@ -13,7 +13,7 @@
         (system:
           with import nixpkgs { inherit system; }; {
             name = system;
-            value = { default = python310Full.withPackages(ps: 
+            value = { default = python310.withPackages(ps: 
               [
                 ps.matplotlib
                 ps.numpy
