@@ -6,11 +6,11 @@
       },
       "locked": {
         "dir": "alacritty-head",
-        "lastModified": 1676677896,
-        "narHash": "sha256-n0jBXRWTMmjnAXnVHIhN3B4VrQ+67ulSk3iHb82+1UM=",
+        "lastModified": 1676678010,
+        "narHash": "sha256-IM7lGOaYVnsDaZQgm9zgieQ/S/cAh7zjqnV5EhxiHp8=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "0a3bc9b562b05f85e7d5712a3d24f14b3f6ac78f",
+        "rev": "ef3a73332b737b4b3f5c564e7a6dadce189c462c",
         "type": "github"
       },
       "original": {
@@ -26,11 +26,11 @@
       },
       "locked": {
         "dir": "cargo-instruments",
-        "lastModified": 1676677896,
-        "narHash": "sha256-n0jBXRWTMmjnAXnVHIhN3B4VrQ+67ulSk3iHb82+1UM=",
+        "lastModified": 1676678010,
+        "narHash": "sha256-IM7lGOaYVnsDaZQgm9zgieQ/S/cAh7zjqnV5EhxiHp8=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "0a3bc9b562b05f85e7d5712a3d24f14b3f6ac78f",
+        "rev": "ef3a73332b737b4b3f5c564e7a6dadce189c462c",
         "type": "github"
       },
       "original": {
@@ -46,11 +46,11 @@
       },
       "locked": {
         "dir": "cbqn",
-        "lastModified": 1676677896,
-        "narHash": "sha256-n0jBXRWTMmjnAXnVHIhN3B4VrQ+67ulSk3iHb82+1UM=",
+        "lastModified": 1676678010,
+        "narHash": "sha256-IM7lGOaYVnsDaZQgm9zgieQ/S/cAh7zjqnV5EhxiHp8=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "0a3bc9b562b05f85e7d5712a3d24f14b3f6ac78f",
+        "rev": "ef3a73332b737b4b3f5c564e7a6dadce189c462c",
         "type": "github"
       },
       "original": {
@@ -66,11 +66,11 @@
       },
       "locked": {
         "dir": "emacs-head",
-        "lastModified": 1676677896,
-        "narHash": "sha256-n0jBXRWTMmjnAXnVHIhN3B4VrQ+67ulSk3iHb82+1UM=",
+        "lastModified": 1676678010,
+        "narHash": "sha256-IM7lGOaYVnsDaZQgm9zgieQ/S/cAh7zjqnV5EhxiHp8=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "0a3bc9b562b05f85e7d5712a3d24f14b3f6ac78f",
+        "rev": "ef3a73332b737b4b3f5c564e7a6dadce189c462c",
         "type": "github"
       },
       "original": {
@@ -104,11 +104,11 @@
       },
       "locked": {
         "dir": "gratchk",
-        "lastModified": 1676677896,
-        "narHash": "sha256-n0jBXRWTMmjnAXnVHIhN3B4VrQ+67ulSk3iHb82+1UM=",
+        "lastModified": 1676678010,
+        "narHash": "sha256-IM7lGOaYVnsDaZQgm9zgieQ/S/cAh7zjqnV5EhxiHp8=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "0a3bc9b562b05f85e7d5712a3d24f14b3f6ac78f",
+        "rev": "ef3a73332b737b4b3f5c564e7a6dadce189c462c",
         "type": "github"
       },
       "original": {
@@ -124,11 +124,11 @@
       },
       "locked": {
         "dir": "gratgen",
-        "lastModified": 1676677896,
-        "narHash": "sha256-n0jBXRWTMmjnAXnVHIhN3B4VrQ+67ulSk3iHb82+1UM=",
+        "lastModified": 1676678010,
+        "narHash": "sha256-IM7lGOaYVnsDaZQgm9zgieQ/S/cAh7zjqnV5EhxiHp8=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "0a3bc9b562b05f85e7d5712a3d24f14b3f6ac78f",
+        "rev": "ef3a73332b737b4b3f5c564e7a6dadce189c462c",
         "type": "github"
       },
       "original": {
@@ -138,17 +138,17 @@
         "type": "github"
       }
     },
-    "mypython10": {
+    "mypython310": {
       "inputs": {
         "nixpkgs": "nixpkgs_8"
       },
       "locked": {
         "dir": "python",
-        "lastModified": 1676677896,
-        "narHash": "sha256-n0jBXRWTMmjnAXnVHIhN3B4VrQ+67ulSk3iHb82+1UM=",
+        "lastModified": 1676678010,
+        "narHash": "sha256-IM7lGOaYVnsDaZQgm9zgieQ/S/cAh7zjqnV5EhxiHp8=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "0a3bc9b562b05f85e7d5712a3d24f14b3f6ac78f",
+        "rev": "ef3a73332b737b4b3f5c564e7a6dadce189c462c",
         "type": "github"
       },
       "original": {
@@ -317,7 +317,7 @@
         "fukuoka-c19": "fukuoka-c19",
         "gratchk": "gratchk",
         "gratgen": "gratgen",
-        "mypython10": "mypython10",
+        "mypython310": "mypython310",
         "sat-bench": "sat-bench",
         "splr": "splr"
       }
