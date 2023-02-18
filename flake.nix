@@ -25,7 +25,7 @@
               fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
               gratgen            = inputs.gratgen.packages.${system}.default;
               sat-bench          = inputs.sat-bench.packages.${system}.default;
-              mypython310        = inputs.mypython.packages.${system}.default;
+              mypython310        = inputs.mypython310.packages.${system}.default;
               splr               = inputs.splr.packages.${system}.default;
             } // (if system == "x86_64-darwin" || system == "x86_64-linux" then {
               gratchk            = inputs.gratchk.packages.${system}.default;
