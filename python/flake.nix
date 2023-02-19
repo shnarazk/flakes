@@ -15,6 +15,7 @@
             name = system;
             value = { default = python310.withPackages(ps: 
               [
+                ps.jupyterlab
                 ps.matplotlib
                 ps.numpy
                 ps.pillow
