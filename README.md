@@ -11,6 +11,7 @@ nix registry add NAME github:shnarazk/flakes
 - [emacs-28.2](https://www.gnu.org/software/emacs/) with native compilation from https://git.savannah.gnu.org/cgit/emacs.git
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
+- [zellij](https://www21.in.tum.de/~lammich/grat/) from https://github.com/zellij-org/zellij
 
 And some my programs:
 
