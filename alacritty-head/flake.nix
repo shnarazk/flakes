@@ -10,7 +10,7 @@
             value = {
               default = alacritty.overrideAttrs (attrs: rec {
                 pname = "alacritty-head";
-                version = "0.12.0-rc2";
+                version = "0.12.0-rc3";
                 name = "${pname}-${version}";
                 src = fetchFromGitHub {
                   owner = "alacritty";
