@@ -16,13 +16,13 @@
                   owner = "alacritty";
                   repo = "alacritty";
                   rev = "refs/tags/v${version}";
-                  sha256 = "sha256-ul1Wh6ILU8hDmW0OB6aTYYceCiSIbfGbrvfyiksWGyo=";
+                  sha256 = "sha256-Qxx3AHz2GbaIAs8w2HJfyWjjUKxayXRRa2wg/GFwSeQ=";
                 };
                 # https://discourse.nixos.org/t/is-it-possible-to-override-cargosha256-in-buildrustpackage/4393
                 cargoDeps = alacritty.cargoDeps.overrideAttrs (lib.const {
                   name = "${pname}-vendor.tar.gz";
                   inherit src;
-                  outputHash = "sha256-oF3DIOSilVmRoGqxelX4FfNyaB+x2j3VhwyzNadi8JI=";
+                  outputHash = "sha256-ajzQU+xhvDc5lBNzE6t7uEMjbu+LufObKx2wf6ZXdLA=";
                 });
               });
             };
