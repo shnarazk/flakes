@@ -8,7 +8,7 @@
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
-    mypython310.url       = github:shnarazk/flakes?dir=python;
+    mypython310.url       = github:shnarazk/flakes?dir=mypython310;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr;
     zellij-head.url       = github:shnarazk/flakes?dir=zellij-head;
