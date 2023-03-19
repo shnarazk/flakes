@@ -9,6 +9,7 @@
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     mypython310.url       = github:shnarazk/flakes?dir=mypython310;
+    mypython311.url       = github:shnarazk/flakes?dir=mypython311;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr;
     zellij-head.url       = github:shnarazk/flakes?dir=zellij-head;
@@ -27,6 +28,7 @@
               gratgen            = inputs.gratgen.packages.${system}.default;
               sat-bench          = inputs.sat-bench.packages.${system}.default;
               mypython310        = inputs.mypython310.packages.${system}.default;
+              mypython311        = inputs.mypython311.packages.${system}.default;
               splr               = inputs.splr.packages.${system}.default;
               zellij-head        = inputs.zellij-head.packages.${system}.default;
             } // (if system == "x86_64-darwin" || system == "x86_64-linux" then {
