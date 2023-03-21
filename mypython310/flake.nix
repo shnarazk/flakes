@@ -1,5 +1,6 @@
 {
-  inputs.nixpkgs.url = github:NixOS/nixpkgs;
+  # inputs.nixpkgs.url = github:NixOS/nixpkgs;
+  inputs.nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-22.11-darwin;
   outputs = { self, nixpkgs }: {
     # overlays = {
     #   default = final: prev: {

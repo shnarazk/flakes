@@ -1,5 +1,5 @@
 {
-  description = "Emacs Head, the unreleased 28.2";
+  description = "Emacs Head, the unreleased 28.3";
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
   outputs = { self, nixpkgs }: {
     overlays = {
@@ -23,11 +23,11 @@
                 emacsNative.overrideAttrs (attrs: rec {
                   name = "emacs-head-${version}";
                   pname = "emacs-head";
-                  version = "28.2-20220913-1";
-                  rev = "6a35160e557120b27ee6f8da04c50a89ee54b28c";
+                  version = "28.3-rc1-1";
+                  rev = "a44d906740f0d8b2b1f1b4db4f1cce88f4832692";
                   src = fetchurl {
-                    url = "https://ftpmirror.gnu.org/emacs/emacs-28.2.tar.xz";
-                    sha256 = "ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488";
+                    url = "https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-a44d906740f0d8b2b1f1b4db4f1cce88f4832692.tar.gz";
+                    sha256 = "sha256-BCXck+Vo6OE2FMjS7QM5x1IzpP1yiutxhBdhoBjCwvg=";
                   };
                   patches = [];
                   preConfigure = ''
