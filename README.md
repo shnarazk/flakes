@@ -5,7 +5,7 @@ Collection of my flakes on nixpkgs
 nix registry add NAME github:shnarazk/flakes
 ```
 
-- [alacritty-0.12.0-RC3](https://alacritty.org) from https://github.com/alacritty/alacritty
+- [alacritty-0.12.0](https://alacritty.org) from https://github.com/alacritty/alacritty
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [cbqn](https://github.com/dzaima/CBQN) w/ replxx
 - [emacs-28.3-RC1](https://www.gnu.org/software/emacs/) with native compilation from https://git.savannah.gnu.org/cgit/emacs.git
