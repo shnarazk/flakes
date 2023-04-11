@@ -8,7 +8,7 @@ nix registry add NAME github:shnarazk/flakes
 - [alacritty-0.12.0](https://alacritty.org) from https://github.com/alacritty/alacritty
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [cbqn](https://github.com/dzaima/CBQN) w/ replxx
-- [emacs-28.3-RC1](https://www.gnu.org/software/emacs/) with native compilation from https://git.savannah.gnu.org/cgit/emacs.git
+- [emacs-29.0.90](https://www.gnu.org/software/emacs/) ***without native compilation*** from https://git.savannah.gnu.org/cgit/emacs.git
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
 - [zellij-0.35.2](https://zellij.dev) from https://github.com/zellij-org/zellij
