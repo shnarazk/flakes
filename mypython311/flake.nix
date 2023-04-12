@@ -1,13 +1,6 @@
 {
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
   outputs = { self, nixpkgs }: {
-    # overlays = {
-    #   default = final: prev: {
-    #     mypython = prev.python310Full.override {
-    #       withPackages = (ps: [ ps.scikit-learn ]);
-    #     };
-    #   };
-    # };
     packages = builtins.listToAttrs
       (map
         (system:
@@ -15,6 +8,7 @@
             name = system;
             value = { default = python311.withPackages(ps: 
               [
+                ps.flask
                 ps.jupyterlab
                 ps.matplotlib
                 ps.numpy
