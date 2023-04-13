@@ -10,18 +10,18 @@
             value = {
               default = zellij.overrideAttrs (attrs: rec {
                 pname = "zellij-head";
-                version = "0.35.2";
+                version = "0.36.0";
                 name = "${pname}-${version}";
                 src = fetchFromGitHub {
                   owner = "zellij-org";
                   repo = "zellij";
                   rev = "refs/tags/v${version}";
-                  sha256 = "sha256-2wgv84Qm/X5mcEcM5ch7tFHZVg/xassUOtssSzbr0fs=";
+                  sha256 = "sha256-6hd4vZfcztD+i3hRP057Z9kYbl/QYK7e5X18tKRmNVQ=";
                 };
                 cargoDeps = zellij.cargoDeps.overrideAttrs (lib.const {
                   name = "${pname}-vendor.tar.gz";
                   inherit src;
-                  outputHash = "sha256-ycKCU5tEqefgwXQlyACCoYOEayccqRifc1KjFcTgf3A=";
+                  outputHash = "sha256-5Dkkmo+9sBvYhAMNchBHw9C7FAoLmjO7gvKRfWk+Ook=";
                 });
               });
             };
