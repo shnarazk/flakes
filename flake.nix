@@ -6,7 +6,7 @@
     cbqn.url              = github:shnarazk/flakes?dir=cbqn;
     emacs-head.url        = github:shnarazk/flakes?dir=emacs-head;
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
-    gex-heaad.url         = github:shnarazk/flakes?dir=gex-head;
+    gex-head.url          = github:shnarazk/flakes?dir=gex-head;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     mypython310.url       = github:shnarazk/flakes?dir=mypython310;
