@@ -6,6 +6,7 @@
     cbqn.url              = github:shnarazk/flakes?dir=cbqn;
     emacs-head.url        = github:shnarazk/flakes?dir=emacs-head;
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
+    gex-heaad.url         = github:shnarazk/flakes?dir=gex-head;
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     mypython310.url       = github:shnarazk/flakes?dir=mypython310;
@@ -25,6 +26,7 @@
               cbqn               = inputs.cbqn.packages.${system}.default;
               emacs-head         = inputs.emacs-head.packages.${system}.default;
               fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
+              gex-head           = inputs.gex-head.packages.${system}.default;
               gratgen            = inputs.gratgen.packages.${system}.default;
               sat-bench          = inputs.sat-bench.packages.${system}.default;
               mypython310        = inputs.mypython310.packages.${system}.default;
