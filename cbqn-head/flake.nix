@@ -36,6 +36,7 @@
                 stdenv.mkDerivation rec {
                   pname = "cbqn-head";
                   version = "0.2.0";
+                  name = "${pname}-${version}-dev.1";
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
@@ -49,9 +50,10 @@
                     sed -i '/SHELL =.*/ d' makefile
                   '';
                   makeFlags = [
-                    (if stdenv.hostPlatform.avxSupport then "o3n-singeli" else "o3-singeli")
+                    (if stdenv.hostPlatform.avx2Support then "o3n-singeli" else "o3-singeli")
                     "REPLXX=1"
                   ];
+                  outputs = ["out" "lib" "dev"];
                   preBuild = ''
                     # Purity: avoids git downloading bytecode files by fullfilling *Local dirs
                     mkdir -p build/bytecodeLocal/gen
@@ -70,6 +72,8 @@
                      # note guard condition for case-insensitive filesystems
                      [ -e $out/bin/bqn ] || ln -s $out/bin/BQN $out/bin/bqn
                      [ -e $out/bin/cbqn ] || ln -s $out/bin/BQN $out/bin/cbqn
+                     install -Dm644 include/bqnffi.h -t "$dev/include"
+                     install -Dm755 libcbqn${stdenv.hostPlatform.extensions.sharedLibrary} -t "$lib/lib"
                      runHook postInstall
                   '';
                   meta = with lib; {
