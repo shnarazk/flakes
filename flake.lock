@@ -40,21 +40,21 @@
         "type": "github"
       }
     },
-    "cbqn": {
+    "cbqn-head": {
       "inputs": {
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "dir": "cbqn",
-        "lastModified": 1682267023,
-        "narHash": "sha256-vaHlOwpXWakgB18xCs4MYvFBLZHJ6rmFZpM53YnzOm4=",
+        "dir": "cbqn-head",
+        "lastModified": 1682828000,
+        "narHash": "sha256-RxjoGXsXagfc9GVlbrbKq481J3c127lZkUlRZKaFzTU=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "29dd1a80c492d62950275f7e2b482271b806a541",
+        "rev": "503862cb3e6f25f834ccc378d96a499eb61955ff",
         "type": "github"
       },
       "original": {
-        "dir": "cbqn",
+        "dir": "cbqn-head",
         "owner": "shnarazk",
         "repo": "flakes",
         "type": "github"
@@ -290,11 +290,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1682266827,
-        "narHash": "sha256-K+ZriFdFKMWbJ+IjJf3LJAKp3KePOvO76W2mzlxdsA4=",
+        "lastModified": 1682829257,
+        "narHash": "sha256-n3LQRg3rPD6xR2P8P/Ar0Fa3DgRrbPqLsblRh/tH2mA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5d91a896449650d13fbba8c8abc65d1615c2b654",
+        "rev": "038e126f05f32aaa6064a84fd413f7ed5d428dd4",
         "type": "github"
       },
       "original": {
@@ -398,7 +398,7 @@
       "inputs": {
         "alacritty-head": "alacritty-head",
         "cargo-instruments": "cargo-instruments",
-        "cbqn": "cbqn",
+        "cbqn-head": "cbqn-head",
         "emacs-head": "emacs-head",
         "fukuoka-c19": "fukuoka-c19",
         "gex-head": "gex-head",
