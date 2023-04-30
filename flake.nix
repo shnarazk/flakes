@@ -3,7 +3,7 @@
   inputs = {
     alacritty-head.url    = github:shnarazk/flakes?dir=alacritty-head;
     cargo-instruments.url = github:shnarazk/flakes?dir=cargo-instruments;
-    cbqn.url              = github:shnarazk/flakes?dir=cbqn;
+    cbqn-head.url         = github:shnarazk/flakes?dir=cbqn-head;
     emacs-head.url        = github:shnarazk/flakes?dir=emacs-head;
     fukuoka-c19.url       = github:shnarazk/fukuoka-c19.rs;
     gex-heaad.url         = github:shnarazk/flakes?dir=gex-head;
@@ -23,7 +23,7 @@
             name = system;
             value = {
               alacritty-head     = inputs.alacritty-head.packages.${system}.default;
-              cbqn               = inputs.cbqn.packages.${system}.default;
+              cbqn-head          = inputs.cbqn-head.packages.${system}.default;
               emacs-head         = inputs.emacs-head.packages.${system}.default;
               fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
               gex-head           = inputs.gex-head.packages.${system}.default;
@@ -48,4 +48,3 @@
     ;
   };
 }
- 
