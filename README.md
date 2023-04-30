@@ -7,7 +7,7 @@ nix registry add NAME github:shnarazk/flakes
 
 - [alacritty-head(0.12.0)](https://alacritty.org) from https://github.com/alacritty/alacritty
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
-- [cbqn-head(0.2)](https://github.com/dzaima/CBQN) w/ replxx
+- [cbqn-head(0.2.0)](https://github.com/dzaima/CBQN) w/ replxx
 - [emacs-head(29.0.90)](https://www.gnu.org/software/emacs/) with native compilation/tree-sitter from https://git.savannah.gnu.org/cgit/emacs.git
 - [gex-head(0.3.8)](https://github.com/Piturnah/gex)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
