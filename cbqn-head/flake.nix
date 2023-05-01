@@ -36,7 +36,7 @@
                 stdenv.mkDerivation rec {
                   pname = "cbqn-head";
                   version = "0.2.0";
-                  name = "${pname}-${version}-dev.1";
+                  name = "${pname}-${version}-dev.2";
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
@@ -72,8 +72,9 @@
                      # note guard condition for case-insensitive filesystems
                      [ -e $out/bin/bqn ] || ln -s $out/bin/BQN $out/bin/bqn
                      [ -e $out/bin/cbqn ] || ln -s $out/bin/BQN $out/bin/cbqn
+                     make shared-o3
                      install -Dm644 include/bqnffi.h -t "$dev/include"
-                     install -Dm755 libcbqn${stdenv.hostPlatform.extensions.sharedLibrary} -t "$lib/lib"
+                     install -Dm755 libcbqn.* -t "$lib/lib"
                      runHook postInstall
                   '';
                   meta = with lib; {
