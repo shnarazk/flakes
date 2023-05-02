@@ -36,7 +36,7 @@
                 stdenv.mkDerivation rec {
                   pname = "cbqn-head";
                   version = "0.2.0";
-                  name = "${pname}-${version}-dev.2";
+                  name = "${pname}-${version}-dev.3";
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
@@ -53,7 +53,7 @@
                     (if stdenv.hostPlatform.avx2Support then "o3n-singeli" else "o3-singeli")
                     "REPLXX=1"
                   ];
-                  outputs = ["out" "lib" "dev"];
+                  # outputs = ["out" "lib" "dev"];
                   preBuild = ''
                     # Purity: avoids git downloading bytecode files by fullfilling *Local dirs
                     mkdir -p build/bytecodeLocal/gen
@@ -73,8 +73,8 @@
                      [ -e $out/bin/bqn ] || ln -s $out/bin/BQN $out/bin/bqn
                      [ -e $out/bin/cbqn ] || ln -s $out/bin/BQN $out/bin/cbqn
                      make shared-o3
-                     install -Dm644 include/bqnffi.h -t "$dev/include"
-                     install -Dm755 libcbqn.* -t "$lib/lib"
+                     install -Dm644 include/bqnffi.h -t "$out/include"
+                     install -Dm755 libcbqn.* -t "$out/lib"
                      runHook postInstall
                   '';
                   meta = with lib; {
