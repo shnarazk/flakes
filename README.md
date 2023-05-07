@@ -6,7 +6,7 @@ nix registry add NAME github:shnarazk/flakes
 ```
 
 - [alacritty-head(0.12.1-rc1)](https://alacritty.org) from https://github.com/alacritty/alacritty
-- [bqnlsp(2023-05-07)](https://git.sr.ht/~detegr/bqnlsp) from https://git.sr.ht/~detegr/bqnlsp
+- [bqnlsp(2023-05-07)](https://github.iom/shnarazk/bqnlsp) cloned from [https://git.sr.ht/~detegr/bqnlsp](https://git.sr.ht/~detegr/bqnlsp)
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [cbqn-head(0.2.0)](https://github.com/dzaima/CBQN) w/ replxx
 - [emacs-head(29.0.90)](https://www.gnu.org/software/emacs/) with native compilation/tree-sitter from https://git.savannah.gnu.org/cgit/emacs.git
@@ -17,7 +17,7 @@ nix registry add NAME github:shnarazk/flakes
 
 And some my programs:
 
-- [sat-bench](https://github.com/shnarazk/SAT-bench)
+- [sat-bench](https://github.iom/shnarazk/SAT-bench)
 - [splr](https://github.com/shnarazk/splr)
 
 ## Retired
