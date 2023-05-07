@@ -24,7 +24,7 @@
             name = system;
             value = {
               alacritty-head     = inputs.alacritty-head.packages.${system}.default;
-              bqnlsp             = inputs.bqnlsp.packages.${system}.default;
+              bqnlsp             = inputs.bqnlsp.packages.${system}.defaultApp;
               cbqn-head          = inputs.cbqn-head.packages.${system}.default;
               emacs-head         = inputs.emacs-head.packages.${system}.default;
               fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
