@@ -17,13 +17,12 @@ nix registry add NAME github:shnarazk/flakes
 
 And some my programs:
 
-- [fukuoka-c19.rs](https://github.com/shnarazk/fukuoka-c19.rs)
 - [sat-bench](https://github.com/shnarazk/SAT-bench)
 - [splr](https://github.com/shnarazk/splr)
 
 ## Retired
 
 - [cadical](http://fmv.jku.at/cadical) from https://github.com/arminbiere/cadical
-- [cbqn](https://github.com/dzaima/CBQN) w/ replxx
+- [fukuoka-c19.rs](https://github.com/shnarazk/fukuoka-c19.rs)
 - [kissat](http://fmv.jku.at/kissat) was merged into nixpkgs
 
