@@ -15,8 +15,8 @@
                     name = "bytecode-submodule";
                     owner = "dzaima";
                     repo = "cbqnBytecode";
-                    rev = "78ed4102f914eb5fa490d76d4dcd4f8be6e53417";
-                    hash = "sha256-IOhxcfGmpARiTdFMSpc+Rh8VXtasZdfP6vKJzULNxAg=";
+                    rev = "32db4dfbfc753835bf112f3d8ae2991d8aebbe3d";
+                    hash = "sha256-9uBPrEESn/rB9u0xXwKaQ7ABveQWPc8LRMPlnI/79kg=";
                   };
                   replxx-submodule = fetchFromGitHub {
                     name = "replxx-submodule";
@@ -29,19 +29,19 @@
                     name = "singeli-submodule";
                     owner = "mlochbaum";
                     repo = "Singeli";
-                    rev = "3327956fedfdc6aef12954bc12120f20de2226d0";
-                    hash = "sha256-k25hk5zTn0m+2Nh9buTJYhtM98/VRlQ0guoRw9el3VE=";
+                    rev = "853ab1a06ae8d8603f228d8e784fa319cc401459";
+                    hash = "sha256-X/NnufvakihJAE9H7geuuDS7Tv9l7tgLKdRgXC4ZX4A=";
                   };
                 in
                 stdenv.mkDerivation rec {
                   pname = "cbqn-head";
-                  version = "0.2.0";
+                  version = "0.3.0";
                   name = "${pname}-${version}-dev.3";
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
                     rev = "refs/tags/v${version}";
-                    sha256 = "sha256-M9GTsm65DySLcMk9QDEhImHnUvWtYGPwiG657wHg3KA=";
+                    sha256 = "sha256-LoxwNxuadbYJgIkr1+bZoErTc9WllN2siAsKnxoom3Y=";
                   };
                   nativeBuildInputs = [ pkg-config ];
                   buildInputs = [ libffi ];
@@ -50,8 +50,7 @@
                     sed -i '/SHELL =.*/ d' makefile
                   '';
                   makeFlags = [
-                    (if stdenv.hostPlatform.avx2Support then "o3n-singeli" else "o3-singeli")
-                    "REPLXX=1"
+                    (if stdenv.hostPlatform.avx2Support then "o3n" else "o3")
                   ];
                   # outputs = ["out" "lib" "dev"];
                   preBuild = ''
