@@ -36,7 +36,7 @@
                 stdenv.mkDerivation rec {
                   pname = "cbqn-head";
                   version = "0.3.0";
-                  name = "${pname}-${version}-dev.3";
+                  name = "${pname}-${version}-dev.1";
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
