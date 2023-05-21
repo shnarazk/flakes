@@ -8,8 +8,7 @@
           with import nixpkgs { system = "${system}"; };
           {
             name = system;
-            value = {
-              default =
+            value = let builder = { flag }:
                 let
                   bytecode-submodule = fetchFromGitHub {
                     name = "bytecode-submodule";
@@ -36,7 +35,7 @@
                 stdenv.mkDerivation rec {
                   pname = "cbqn-head";
                   version = "0.3.0";
-                  name = "${pname}-${version}-dev.1";
+                  name = "${pname}-${version}-dev.2";
                   src = fetchFromGitHub {
                     owner = "dzaima";
                     repo = "CBQN";
@@ -49,9 +48,7 @@
                   postPatch = ''
                     sed -i '/SHELL =.*/ d' makefile
                   '';
-                  makeFlags = [
-                    (if stdenv.hostPlatform.avx2Support then "o3n" else "o3")
-                  ];
+                  makeFlags = [flag "FFI=0"];
                   # outputs = ["out" "lib" "dev"];
                   preBuild = ''
                     # Purity: avoids git downloading bytecode files by fullfilling *Local dirs
@@ -84,7 +81,14 @@
                     platforms = platforms.all;
                   };
                 };
-            };
+
+              in
+              {
+                cbqn-head-o3 = builder { flag = "o3"; };
+                cbqn-head-o3n = builder { flag = "o3n"; };
+                default = builder { flag = "o3"; };
+              }
+            ;
           }
         )
         [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ]
@@ -92,4 +96,3 @@
     ;
   };
 }
- 
