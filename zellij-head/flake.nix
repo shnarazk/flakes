@@ -1,5 +1,5 @@
 {
-  description = "Zellij overlay to zellij-0.35.2";
+  description = "Zellij head";
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
   outputs = { self, nixpkgs }: {
     packages = builtins.listToAttrs
@@ -10,18 +10,18 @@
             value = {
               default = zellij.overrideAttrs (attrs: rec {
                 pname = "zellij-head";
-                version = "0.36.0";
+                version = "0.37.0";
                 name = "${pname}-${version}";
                 src = fetchFromGitHub {
                   owner = "zellij-org";
                   repo = "zellij";
                   rev = "refs/tags/v${version}";
-                  sha256 = "sha256-6hd4vZfcztD+i3hRP057Z9kYbl/QYK7e5X18tKRmNVQ=";
+                  sha256 = "sha256-6gILa7Q9s/AiXdoH/aaHPPpDmWeTKk5s274Bbk2e0V8=";
                 };
                 cargoDeps = zellij.cargoDeps.overrideAttrs (lib.const {
                   name = "${pname}-vendor.tar.gz";
                   inherit src;
-                  outputHash = "sha256-5Dkkmo+9sBvYhAMNchBHw9C7FAoLmjO7gvKRfWk+Ook=";
+                  outputHash = "sha256-u1WSVtMYRX8LtIbeOHQvMSQSWPXTcjXR/VQ18E4XfkI=";
                 });
               });
             };
