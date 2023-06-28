@@ -1,5 +1,5 @@
 {
-  description = "Alacritty overlay to Head, the released 0.12.0";
+  description = "Alacritty overlay to Head, the released 0.12.2";
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
   outputs = { self, nixpkgs }: {
     packages = builtins.listToAttrs
@@ -10,19 +10,19 @@
             value = {
               default = alacritty.overrideAttrs (attrs: rec {
                 pname = "alacritty-head";
-                version = "0.12.1";
+                version = "0.12.2-rc1";
                 name = "${pname}-${version}";
                 src = fetchFromGitHub {
                   owner = "alacritty";
                   repo = "alacritty";
                   rev = "refs/tags/v${version}";
-                  sha256 = "sha256-jw66pBKIhvvaQ+Q6tDV6i7ALa7Z0Pw7dp6gAVPqy5bs=";
+                  sha256 = "sha256-D00RjQObXXdP3Ede5IWb5yje4Vbj5CL1uMdpt5ZGaRk=";
                 };
                 # https://discourse.nixos.org/t/is-it-possible-to-override-cargosha256-in-buildrustpackage/4393
                 cargoDeps = alacritty.cargoDeps.overrideAttrs (lib.const {
                   name = "${pname}-vendor.tar.gz";
                   inherit src;
-                  outputHash = "sha256-9w7tOAXHWkx6MXFP71Eb6BGxDTpDTYLijUZwYzXxK5k=";
+                  outputHash = "sha256-E1ny69FpfjTiX6cvjVj+XRs7UZYmv4Ik+Vkbz6/Wsl4=";
                 });
               });
             };
