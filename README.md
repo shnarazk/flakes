@@ -5,7 +5,7 @@ Collection of my flakes on nixpkgs
 nix registry add NAME github:shnarazk/flakes
 ```
 
-- [alacritty-head(0.12.2-rc1)](https://alacritty.org) from https://github.com/alacritty/alacritty
+- [alacritty-head(0.12.2)](https://alacritty.org) from https://github.com/alacritty/alacritty
 - [bqnlsp(2023-05-07)](https://github.iom/shnarazk/bqnlsp) cloned from [https://git.sr.ht/~detegr/bqnlsp](https://git.sr.ht/~detegr/bqnlsp)
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [cbqn-head(0.3.0)](https://github.com/dzaima/CBQN) w/ replxx
