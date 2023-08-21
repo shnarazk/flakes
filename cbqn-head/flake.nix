@@ -8,13 +8,14 @@
           with import nixpkgs { system = "${system}"; };
           {
             name = system;
-            value = let builder = { flag }: let
+            value = let builder = { flags }:
+              let
                 bytecode-submodule = fetchFromGitHub {
                   name = "bytecode-submodule";
                   owner = "dzaima";
                   repo = "cbqnBytecode";
-                  rev = "4b895c6b7ff1cd76fd1aa873181e117fda23c9db";
-                  hash = "sha256-Q+xJsmcU8Br4LVjKQ5iYCdwZrZ/YZpWztx7j7YV7H8Q=";
+                  rev = "1eba69000a6900783d9bd3e5c8f3c00f0919b2bc";
+                  hash = "sha256-bS40eFfZqLDHv3kASst8iAqGySM6JB2ouUXyZFu/6XY=";
                 };
                 replxx-submodule = fetchFromGitHub {
                   name = "replxx-submodule";
@@ -33,34 +34,37 @@
               in
               stdenv.mkDerivation rec {
                 pname = "cbqn-head";
-                version = "develop-20230810";
+                version = "pre0.4-20230821";
                 name = "${pname}-${version}-build.0";
                 src = fetchFromGitHub {
                   owner = "dzaima";
                   repo = "CBQN";
                   # rev = "refs/tags/v${version}";
-                  rev = "a175c481042fb3d7aa15217edd361b84cd7fca86";
-                  sha256 = "sha256-LoxwNxuadbYJgIkr1+bZoErTc9WllN2siAsKnxoom3Y=";
+                  rev = "bc796eac32b2512dd4572cebff42c019d34fddd1";
+                  sha256 = "sha256-jS60phZMrpGa+GVzZSGZwVVtW9RBp/oHRIYP/pXRU2I=";
                 };
-                nativeBuildInputs = [ git pkg-config ];
+                nativeBuildInputs = [ pkg-config libffi ];
                 buildInputs = [ git libffi ];
                 dontConfigure = true;
-                postPatch = ''
-                  sed -i '/SHELL =.*/ d' makefile
-                '';
-                # makeFlags = [flag "FFI=0"];
+                # postPatch = ''
+                #   sed -i '/SHELL =.*/ d' makefile
+                # '';
+                makeFlags = flags;
                 # outputs = ["out" "lib" "dev"];
                 preBuild = ''
                   # Purity: avoids git downloading bytecode files by fullfilling *Local dirs
+                  cp -r ${bytecode-submodule} build/bytecodeSubmodule
                   cp -r ${bytecode-submodule} build/bytecodeLocal
                   ls -l build/bytecodeLocal
+                  cp -r ${replxx-submodule} build/replxxSubmodule
                   cp -r ${replxx-submodule} build/replxxLocal
-                  ls -l build/replxxLocal
+                  # ls -l build/replxxLocal
+                  cp -r ${singeli-submodule} build/singeliSubmodule
                   cp -r ${singeli-submodule} build/singeliLocal
-                  ls -l build/singeliLocal
-                  git init .
-                  git add README.md
-                  git commit -m "initialize"
+                  # ls -l build/singeliLocal
+                  # git init .
+                  # git add README.md
+                  # git commit -m "init"
                   echo "make for-build"
                   make for-build
                   # echo "make o3"
@@ -90,9 +94,9 @@
 
               in
               {
-                cbqn-head-o3 = builder { flag = "o3"; };
-                cbqn-head-o3n = builder { flag = "o3n"; };
-                default = builder { flag = "o3n"; };
+                cbqn-head-o3 = builder { flags = ["o3"]; };
+                cbqn-head-o3n = builder { flags = ["o3" "has=avx2"]; };
+                default = builder { flags = ["o3" "has=avx2"]; };
               }
             ;
           }
