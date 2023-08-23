@@ -34,13 +34,13 @@
               in
               stdenv.mkDerivation rec {
                 pname = "cbqn-head";
-                version = "pre0.4-20230823";
+                version = "0.4-20230824";
                 name = "${pname}-${version}-build.0";
                 src = fetchFromGitHub {
                   owner = "dzaima";
                   repo = "CBQN";
                   # rev = "refs/tags/v${version}";
-                  rev = "bc796eac32b2512dd4572cebff42c019d34fddd1";
+                  rev = "0d2631a2278fab44164f4619a1a8c295fe674fa0";
                   sha256 = "sha256-jS60phZMrpGa+GVzZSGZwVVtW9RBp/oHRIYP/pXRU2I=";
                 };
                 nativeBuildInputs = [ pkg-config libffi ];
