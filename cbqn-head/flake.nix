@@ -14,8 +14,8 @@
                   name = "bytecode-submodule";
                   owner = "dzaima";
                   repo = "cbqnBytecode";
-                  rev = "1eba69000a6900783d9bd3e5c8f3c00f0919b2bc";
-                  hash = "sha256-bS40eFfZqLDHv3kASst8iAqGySM6JB2ouUXyZFu/6XY=";
+                  rev = "d8b2525cd11e30eef04a19f0cf1bc784c0d9ba10";
+                  hash = "sha256-J4Ddz2EDykbSuDWmjRyEMeGUhdY4HG5pk+7LnAhEHJ8=";
                 };
                 replxx-submodule = fetchFromGitHub {
                   name = "replxx-submodule";
@@ -34,7 +34,7 @@
               in
               stdenv.mkDerivation rec {
                 pname = "cbqn-head";
-                version = "pre0.4-20230821";
+                version = "pre0.4-20230823";
                 name = "${pname}-${version}-build.0";
                 src = fetchFromGitHub {
                   owner = "dzaima";
