@@ -1,5 +1,5 @@
 {
-  description = "A BQN implementation in C with replxx singeli features";
+  description = "A BQN implementation in C";
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
   outputs = { self, nixpkgs }: {
     packages = builtins.listToAttrs
@@ -21,27 +21,27 @@
                   name = "replxx-submodule";
                   owner = "dzaima";
                   repo = "replxx";
-                  rev = "1da4681a8814366ec51e7630b76558e53be0997d";
-                  hash = "sha256-Zs7ItuK31n0VSxwOsPUdZZLr68PypitZqcydACrx90Q=";
+                  rev = "bc3e0aaeabf299c43e19b13d23d6809967469872";
+                  hash = "sha256-TRiGnHhRpM+0y/XSwqu2YP459tot5DSAN5Qqml1FNdE=";
                 };
                 singeli-submodule = fetchFromGitHub {
                   name = "singeli-submodule";
                   owner = "mlochbaum";
                   repo = "Singeli";
-                  rev = "ac9e7b7517a8b84aeebecfa360f0694629f83ec0";
-                  hash = "sha256-mQ+xfIXItlDsErx93XAPqTAMKl2DrBoF/jELlMGm1tk=";
+                  rev = "49a6a90d83992171a2db749e9f7fd400ec65ef2c";
+                  hash = "sha256-9Dc6yrrXV6P9s1uwGlXB+ZBquOLejWe41k0TSpJGDgE=";
                 };
               in
               stdenv.mkDerivation rec {
                 pname = "cbqn-head";
-                version = "0.4-20230824";
+                version = "devel-20230917";
                 name = "${pname}-${version}-build.0";
                 src = fetchFromGitHub {
                   owner = "dzaima";
                   repo = "CBQN";
                   # rev = "refs/tags/v${version}";
-                  rev = "0d2631a2278fab44164f4619a1a8c295fe674fa0";
-                  sha256 = "sha256-jS60phZMrpGa+GVzZSGZwVVtW9RBp/oHRIYP/pXRU2I=";
+                  rev = "6a0805eb9d1da306b4e51bda436e0c59cdf8f507";
+                  sha256 = "sha256-lCS7k7vESDfSDtWEgIqMlAsJi9/TTmfSIPH22yeTAx8=";
                 };
                 nativeBuildInputs = [ pkg-config libffi ];
                 buildInputs = [ git libffi ];
@@ -95,8 +95,8 @@
               in
               {
                 cbqn-head-o3 = builder { flags = ["o3"]; };
-                cbqn-head-o3n = builder { flags = ["o3" "has=avx2"]; };
-                default = builder { flags = ["o3" "has=avx2"]; };
+                cbqn-head-o3n = builder { flags = ["o3n" "has=avx2"]; };
+                default = builder { flags = ["o3"]; };
               }
             ;
           }
