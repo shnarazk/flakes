@@ -13,6 +13,7 @@
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     sat-bench.url         = github:shnarazk/SAT-bench;
     splr.url              = github:shnarazk/splr;
+    uiua.url              = github:shnarazk/flakes?dir=uiua;
     zellij-head.url       = github:shnarazk/flakes?dir=zellij-head;
   };
   outputs = inputs: {
@@ -31,6 +32,7 @@
               gratgen            = inputs.gratgen.packages.${system}.default;
               sat-bench          = inputs.sat-bench.packages.${system}.default;
               splr               = inputs.splr.packages.${system}.default;
+              uiua               = inputs.uiua.packages.${system}.default;
               zellij-head        = inputs.zellij-head.packages.${system}.default;
             } // (if system == "x86_64-darwin" || system == "x86_64-linux" then {
               gratchk            = inputs.gratchk.packages.${system}.default;
