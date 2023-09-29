@@ -1,5 +1,5 @@
 {
-  description = "A modern SAT solver in Rust";
+  description = "A stack-based array programming laguage";
   inputs.nixpkgs.url = github:NixOS/nixpkgs;
   outputs = { self, nixpkgs }:
   {
@@ -14,13 +14,13 @@
                 stdenv.mkDerivation rec {
                   name = "uiua-${version}";
                   pname = "uiua";
-                  version = "0.0.2-20230929";
+                  version = "0.0.2-20230930";
                   src = fetchFromGitHub {
                     owner = "uiua-lang";
                     repo = "uiua";
                     # rev = "refs/tags/v${version}";
-                    rev = "6f634b0bed41457409e1090e427263673e241b81";
-                    sha256 = "sha256-iBGhmHJThyvTMBKrzq1ljtYxccOrD4rgs+tjrGvV2cE=";
+                    rev = "81420e00c59fdbcd37576d11a61b059998788381";
+                    sha256 = "sha256-zcGBjamknEVIcM2I15AtubGU4ixIrxUHUoNWTkQ5a+g=";
                   };
                   buildInputs = rustc.buildInputs ++ [ cargo rustc pkg-config cacert ]
                      ++ lib.optionals stdenv.isDarwin [
