@@ -14,7 +14,7 @@
                 stdenv.mkDerivation rec {
                   name = "uiua-${version}";
                   pname = "uiua";
-                  version = "0.0.2-20230707";
+                  version = "0.0.2-20230929";
                   src = fetchFromGitHub {
                     owner = "uiua-lang";
                     repo = "uiua";
