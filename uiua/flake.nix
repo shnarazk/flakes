@@ -14,13 +14,13 @@
                 stdenv.mkDerivation rec {
                   name = "uiua-${version}";
                   pname = "uiua";
-                  version = "0.0.2-20230930";
+                  version = "0.0.3-20230930";
                   src = fetchFromGitHub {
                     owner = "uiua-lang";
                     repo = "uiua";
                     # rev = "refs/tags/v${version}";
-                    rev = "81420e00c59fdbcd37576d11a61b059998788381";
-                    sha256 = "sha256-zcGBjamknEVIcM2I15AtubGU4ixIrxUHUoNWTkQ5a+g=";
+                    rev = "f5fe5edb4c41b23669763bf47c8c2b939eb9740d";
+                    sha256 = "sha256-SWMPtT3+HH61Wa8QQrFmt31aW8Aa2mgbltNuU1VTrv8=";
                   };
                   buildInputs = rustc.buildInputs ++ [ cargo rustc pkg-config cacert ]
                      ++ lib.optionals stdenv.isDarwin [
