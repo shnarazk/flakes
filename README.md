@@ -13,7 +13,7 @@ nix registry add NAME github:shnarazk/flakes
 - [gex-head(0.3.8)](https://github.com/Piturnah/gex)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
-- [uiua(0.0.2)](https://www.uiua.org) from https://github.com/uiua-lang/uiua
+- [uiua(0.0.5dev)](https://www.uiua.org) from https://github.com/uiua-lang/uiua
 - [zellij-head(0.38.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
 
 And some my programs:
