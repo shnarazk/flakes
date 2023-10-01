@@ -13,7 +13,6 @@ nix registry add NAME github:shnarazk/flakes
 - [gex-head(0.3.8)](https://github.com/Piturnah/gex)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
-- [uiua(0.0.5dev)](https://www.uiua.org) from https://github.com/uiua-lang/uiua
 - [zellij-head(0.38.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
 
 And some my programs:
@@ -26,4 +25,4 @@ And some my programs:
 - [cadical](http://fmv.jku.at/cadical) from https://github.com/arminbiere/cadical
 - [fukuoka-c19.rs](https://github.com/shnarazk/fukuoka-c19.rs)
 - [kissat](http://fmv.jku.at/kissat) was merged into nixpkgs
-
+- [uiua(0.0.5dev)](https://www.uiua.org) the upstream provides flake.nix
