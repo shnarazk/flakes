@@ -13,7 +13,7 @@ nix registry add NAME github:shnarazk/flakes
 - [gex-head(0.3.8)](https://github.com/Piturnah/gex)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
-- [zellij-head(0.38.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
+- [zellij-head(0.39.0)](https://zellij.dev) from https://github.com/zellij-org/zellij
 
 And some my programs:
 
