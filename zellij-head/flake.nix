@@ -10,20 +10,20 @@
             value = {
               default = zellij.overrideAttrs (attrs: rec {
                 pname = "zellij-head";
-                version = "0.39.1";
+                version = "0.39.2";
                 name = "${pname}-${version}";
                 src = fetchFromGitHub {
                   owner = "zellij-org";
                   repo = "zellij";
                   rev = "refs/tags/v${version}";
-                  sha256 = "sha256-nT4P/ZlquJz48T8LCRQd5menL8vtGMBSUgZNJYx0Pn4=";
+                  sha256 = "sha256-FSLbRfxSWY0a9H9iHT3oQ2SXwB70AwyH0Cm8sDZGaUk=";
                 };
                 buildInputs = zellij.buildInputs ++ [ openssh pkg-config perl ];
                 nativeBuildInputs = zellij.nativeBuildInputs ++ [ openssh pkg-config perl ];
                 cargoDeps = zellij.cargoDeps.overrideAttrs (lib.const {
                   name = "${pname}-vendor.tar.gz";
                   inherit src;
-                  outputHash = "sha256-ldl9VKBTDkWg68N2hAybL8UBvmqIHxWEy6VVN9Tr4ps=";
+                  outputHash = "sha256-5VKAS3zX+aEsZCM6/gptRFeLq9XF0SVrEiIktGhJWSE=";
                 });
               });
             };
