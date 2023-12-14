@@ -19,12 +19,12 @@
                   sha256 = "sha256-5PK8poco+HXbd6zuSjr9of2qSgC8puSTSzZnI4vvXEI=";
                 };
                 # https://discourse.nixos.org/t/is-it-possible-to-override-cargosha256-in-buildrustpackage/4393
+                nativeBuildInputs = alacritty.nativeBuildInputs ++ [ scdoc ];
                 cargoDeps = alacritty.cargoDeps.overrideAttrs (lib.const {
                   name = "${pname}-vendor.tar.gz";
                   inherit src;
                   outputHash = "sha256-EaJaSGqc1vQURdkZLs2h/6You33wDmHNgg+BaHlvVs8=";
                 });
-                outputs = [ "out" ];
                 postInstall = (
                     if stdenv.isDarwin then ''
                       mkdir $out/Applications
@@ -48,16 +48,19 @@
                     installShellCompletion --bash extra/completions/alacritty.bash
                     installShellCompletion --fish extra/completions/alacritty.fish
 
-                    # install -dm 755 "$out/share/man/man1"
-                    # gzip -c extra/alacritty.man > "$out/share/man/man1/alacritty.1.gz"
-                    # gzip -c extra/alacritty-msg.man > "$out/share/man/man1/alacritty-msg.1.gz"
+                    install -dm 755 "$out/share/man/man1"
+                    install -dm 755 "$out/share/man/man5"
+                    scdoc < extra/man/alacritty.1.scd | gzip -c > "$out/share/man/man1/alacritty.1.gz"
+                    scdoc < extra/man/alacritty-msg.1.scd | gzip -c > "$out/share/man/man1/alacritty-msg.1.gz"
+                    scdoc < extra/man/alacritty.5.scd | gzip -c > "$out/share/man/man5/alacritty.5.gz"
+                    scdoc < extra/man/alacritty-bindings.5.scd | gzip -c > "$out/share/man/man5/alacritty-bindings.5.gz"
 
                     # install -Dm 644 alacritty.yml $out/share/doc/alacritty.yml
 
-                    # install -dm 755 "$terminfo/share/terminfo/a/"
-                    # tic -xe alacritty,alacritty-direct -o "$terminfo/share/terminfo" extra/alacritty.info
-                    # mkdir -p $out/nix-support
-                    # echo "$terminfo" >> $out/nix-support/propagated-user-env-packages
+                    install -dm 755 "$terminfo/share/terminfo/a/"
+                    tic -xe alacritty,alacritty-direct -o "$terminfo/share/terminfo" extra/alacritty.info
+                    mkdir -p $out/nix-support
+                    echo "$terminfo" >> $out/nix-support/propagated-user-env-packages
                   '';
 
               });
