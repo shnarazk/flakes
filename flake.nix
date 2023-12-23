@@ -2,7 +2,7 @@
   description = "Piling up my flakes";
   inputs = {
     alacritty-head.url    = github:shnarazk/flakes?dir=alacritty-head;
-    bqnlsp.url            = github:shnarazk/bqnlsp/20230507-flake;
+    # bqnlsp.url            = github:shnarazk/bqnlsp/20230507-flake;
     # bqnlsp.url            = sourcehut:~detegr/bqnlsp;
     # cargo-instruments.url = github:shnarazk/flakes?dir=cargo-instruments;
     # cbqn-head.url         = github:shnarazk/flakes?dir=cbqn-head;
@@ -23,7 +23,7 @@
             name = system;
             value = {
               alacritty-head     = inputs.alacritty-head.packages.${system}.default;
-              bqnlsp             = inputs.bqnlsp.packages.${system}.default;
+              # bqnlsp             = inputs.bqnlsp.packages.${system}.default;
               # cbqn-head          = inputs.cbqn-head.packages.${system}.default;
               # emacs-head         = inputs.emacs-head.packages.${system}.default;
               # fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
