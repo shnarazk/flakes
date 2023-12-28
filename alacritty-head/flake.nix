@@ -10,20 +10,20 @@
             value = {
               default = alacritty.overrideAttrs (attrs: rec {
                 pname = "alacritty-head";
-                version = "0.13.0-rc2";
+                version = "0.13.0";
                 name = "${pname}-${version}";
                 src = fetchFromGitHub {
                   owner = "alacritty";
                   repo = "alacritty";
                   rev = "refs/tags/v${version}";
-                  sha256 = "sha256-6OhajngMr7vt+JFRYMRwKtlcvkpDGD7KeQaab+2/rsI=";
+                  sha256 = "sha256-5jStrLwuuFWlKHIPS5QJ4DUQj9kXLqlpRxeVDXK/uzU=";
                 };
                 # https://discourse.nixos.org/t/is-it-possible-to-override-cargosha256-in-buildrustpackage/4393
                 nativeBuildInputs = alacritty.nativeBuildInputs ++ [ scdoc ];
                 cargoDeps = alacritty.cargoDeps.overrideAttrs (lib.const {
                   name = "${pname}-vendor.tar.gz";
                   inherit src;
-                  outputHash = "sha256-zf9ZjW+DlM7OfICKtYoYQhskBfXigdi6bZ/qQXQ0bOk=";
+                  outputHash = "sha256-tEWzMM0JsDxW4blFce3+QJ+hlUSebOnaDJi8+rJ2UcA=";
                 });
                 postInstall = (
                     if stdenv.isDarwin then ''
