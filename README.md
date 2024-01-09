@@ -5,7 +5,7 @@ Collection of my flakes on nixpkgs
 nix registry add NAME github:shnarazk/flakes
 ```
 
-- [alacritty-head(0.13.1-RC1)](https://alacritty.org) from https://github.com/alacritty/alacritty
+- [alacritty-head(0.13.1)](https://alacritty.org) from https://github.com/alacritty/alacritty
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
