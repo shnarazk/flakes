@@ -12,6 +12,7 @@
     gratchk.url           = github:shnarazk/flakes?dir=gratchk;
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     sat-bench.url         = github:shnarazk/SAT-bench;
+    rust-parallel.url     = github:shnarazk/flakes?dir=rust-parallel;
     splr.url              = github:shnarazk/splr;
     zellij-head.url       = github:shnarazk/flakes?dir=zellij-head;
   };
@@ -30,6 +31,7 @@
               # gex-head           = inputs.gex-head.packages.${system}.default;
               gratgen            = inputs.gratgen.packages.${system}.default;
               sat-bench          = inputs.sat-bench.packages.${system}.default;
+              rust-parallel      = inputs.rust-parallel.packages.${system}.default;
               splr               = inputs.splr.packages.${system}.default;
               zellij-head        = inputs.zellij-head.packages.${system}.default;
             } // (if system == "x86_64-darwin" || system == "x86_64-linux" then {
