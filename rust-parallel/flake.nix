@@ -10,20 +10,20 @@
             value = {
               default = rustPlatform.buildRustPackage rec {
                 pname = "rust-parallel";
-                version = "1.14.0-20240203";
+                version = "1.15.0";
 
                 src = fetchFromGitHub {
                   owner = "aaronriekenberg";
                   repo = pname;
-                  rev = "d841d9dac3f512e3f09715f82fc8111328f9418d";
-                  hash = "sha256-uN7DqxWKOm9df8QjpkWAbja9QE2NbssHDIrHzSovZCs=";
+                  rev = "60bd880a89ccad27b5778c13e8c7106fe238cf3d";
+                  hash = "sha256-3U/7RlS4kk0nydhJvNUkUWUTMVV61qsj2XNGrXUWhTM=";
                 };
 
                 nativeBuildInputs = [ openssl pkg-config libgit2 ];
                 buildInputs = [ openssl libgit2 ] ++ lib.optional stdenv.isDarwin [iconv];
                 PKG_CONFIG_PATH = "${openssl.dev}/lib/pkgconfig";
                 doCheck = false;
-                cargoHash = "sha256-yn5fEUdlnlRJkIVyXPdrpX10M1mHzOL3c+dBkXp8SQY=";
+                cargoHash = "sha256-CA3fGSeekMw+fCRAuJ04bhkOYqK+PBcZxK8nJ7sqif4=";
 
                 meta = with lib; {
                   description = "Fast command line app in rust/tokio to run commands in parallel. Similar interface to GNU parallel or xargs plus useful features. Listed in Awesome Rust utilities.";
