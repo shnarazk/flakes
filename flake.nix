@@ -13,7 +13,7 @@
     gratgen.url           = github:shnarazk/flakes?dir=gratgen;
     sat-bench.url         = github:shnarazk/SAT-bench;
     rust-parallel.url     = github:shnarazk/flakes?dir=rust-parallel;
-    splr.url              = github:shnarazk/splr;
+    splr.url              = github:shnarazk/splr/20240312-nix;
     zellij-head.url       = github:shnarazk/flakes?dir=zellij-head;
   };
   outputs = inputs: {
