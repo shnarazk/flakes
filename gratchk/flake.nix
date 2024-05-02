@@ -1,16 +1,16 @@
 {
   description = "Check DRAT certificate and emit GRAT certificate.";
-  inputs.nixpkgs.url = github:NixOS/nixpkgs;
-  outputs = { self, nixpkgs }: {
-    packages = builtins.listToAttrs
-      (map
-        (system:
-          with import nixpkgs { system = "${system}"; };
-          {
-            name = system;
-            value = {
-              default = 
-                stdenv.mkDerivation {
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+  outputs =
+    { self, nixpkgs }:
+    {
+      packages = builtins.listToAttrs (
+        map
+          (
+            system: with import nixpkgs { system = "${system}"; }; {
+              name = system;
+              value = {
+                default = stdenv.mkDerivation {
                   pname = "gratchk";
                   version = "2021-11-10";
                   src = fetchTarball {
@@ -39,12 +39,14 @@
                     license = licenses.mit;
                     homepage = "https://www21.in.tum.de/~lammich/grat/";
                   };
-                }
-              ;
-            };
-          }
-        )
-        [ "x86_64-linux" "x86_64-darwin" ]
+                };
+              };
+            }
+          )
+          [
+            "x86_64-linux"
+            "x86_64-darwin"
+          ]
       );
-  };
+    };
 }
