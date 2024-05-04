@@ -9,7 +9,7 @@ nix registry add NAME github:shnarazk/flakes
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
-- [rust-parallel(1.18.0)](https://github.com/aaronriekenberg/rust-parallel)
+- [rust-parallel(1.18.1)](https://github.com/aaronriekenberg/rust-parallel)
 - [zellij-head(0.41.0)](https://zellij.dev) from https://github.com/zellij-org/zellij
 
 And some my programs:
