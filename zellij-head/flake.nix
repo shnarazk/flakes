@@ -12,13 +12,13 @@
               value = {
                 default = zellij.overrideAttrs (attrs: rec {
                   pname = "zellij-head";
-                  version = "0.41.1";
+                  version = "0.41.2";
                   name = "${pname}-${version}";
                   src = fetchFromGitHub {
                     owner = "zellij-org";
                     repo = "zellij";
                     rev = "refs/tags/v${version}";
-                    sha256 = "sha256-EUoJHM0Jm0uFKFeHhtzon/ZRC615SHfYa1gr4RnCNBw=";
+                    sha256 = "sha256-xdWfaXWmqFJuquE7n3moUjGuFqKB90OE6lqPuC3onOg=";
                   };
                   buildInputs = zellij.buildInputs ++ [
                     curl
@@ -35,7 +35,7 @@
                     lib.const {
                       name = "${pname}-vendor.tar.gz";
                       inherit src;
-                      outputHash = "sha256-RX94a3LQ+d71TJDi+Wfl6P4xkhIBcCaOqbKIvSt3FeE=";
+                      outputHash = "sha256-x0n6qIHyv+qluqMti9M7fnICzDcpyQ/kCVECMjP1JeA=";
                     }
                   );
                 });
