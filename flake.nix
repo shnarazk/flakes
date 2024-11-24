@@ -14,7 +14,7 @@
     sat-bench.url = "github:shnarazk/SAT-bench";
     rust-parallel.url = "github:shnarazk/flakes?dir=rust-parallel";
     splr.url = "github:shnarazk/splr";
-    tree-sitter-lean4.url = "github:shnarazk/flakes?dir=tree-sitter-lean4";
+    tree-sitter-cli.url = "github:shnarazk/flakes?dir=tree-sitter-cli";
     zellij-head.url = "github:shnarazk/flakes?dir=zellij-head";
   };
   outputs = inputs: {
@@ -34,7 +34,7 @@
               sat-bench = inputs.sat-bench.packages.${system}.default;
               rust-parallel = inputs.rust-parallel.packages.${system}.default;
               splr = inputs.splr.packages.${system}.default;
-              tree-sitter-lean4 = inputs.tree-sitter-lean4.packages.${system}.default;
+              tree-sitter-cli = inputs.tree-sitter-cli.packages.${system}.default;
               zellij-head = inputs.zellij-head.packages.${system}.default;
             }
             // (
