@@ -14,7 +14,7 @@
     sat-bench.url = "github:shnarazk/SAT-bench";
     rust-parallel.url = "github:shnarazk/flakes?dir=rust-parallel";
     splr.url = "github:shnarazk/splr";
-    tree-sitter-lean4 = "github:shnarazk/flakes?dir=tree-sitter-lean4";
+    tree-sitter-lean4.url = "github:shnarazk/flakes?dir=tree-sitter-lean4";
     zellij-head.url = "github:shnarazk/flakes?dir=zellij-head";
   };
   outputs = inputs: {
