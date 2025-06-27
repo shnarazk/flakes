@@ -1,5 +1,5 @@
 {
-  description = "Alacritty overlay to Head, the 0.14.0";
+  description = "my nixvim configuration for Lean4";
   # inputs.nixpkgs.url = "github:NixOS/nixpkgs";
   inputs.nixvim.url = "github:nix-community/nixvim";
 
