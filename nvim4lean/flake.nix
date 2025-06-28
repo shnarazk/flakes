@@ -12,7 +12,6 @@
             name = system;
             value = {
               default = nixvim.legacyPackages.${system}.makeNixvim {
-
                 colorschemes.gruvbox.enable = true;
                 dependencies.lean.enable = false;
                 globals = {
@@ -42,6 +41,10 @@
                     lspBufAction = "hover";
                   }
                 ];
+                opts = {
+                  background = "light";
+                  termguicolors = true;
+                };
                 plugins.blink-cmp = {
                   enable = true;
                   settings.keymap = {
