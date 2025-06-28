@@ -32,7 +32,7 @@
                   ] ++ lib.optional stdenv.isDarwin [ iconv ];
                   PKG_CONFIG_PATH = "${openssl.dev}/lib/pkgconfig";
                   doCheck = false;
-                  cargoHash = "sha256-bhwA2Acl10Rz5uRxJT+RagDZloeztM2eWJmkHV6Ib6c=";
+                  cargoHash = "sha256-wJtXYx2mncOnnUep4CMFt+1mK1vMyhYFCQM/2B9m6zY= ";
                   meta = with lib; {
                     description = "Fast command line app in rust/tokio to run commands in parallel. Similar interface to GNU parallel or xargs plus useful features. Listed in Awesome Rust utilities.";
                     homepage = "https://github.com/aaronriekenberg/rust-parallel";

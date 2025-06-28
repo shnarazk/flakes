@@ -13,8 +13,9 @@ nix registry add NAME github:shnarazk/flakes
 - [rust-parallel(1.18.1)](https://github.com/aaronriekenberg/rust-parallel)
 - [zellij-head(0.41.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
 
-And some my programs:
+And some my programs or customization:
 
+- [nixvim with my configuration](https://github.com/nix-community/nixvim)
 - [sat-bench](https://github.iom/shnarazk/SAT-bench)
 - [splr](https://github.com/shnarazk/splr)
 
