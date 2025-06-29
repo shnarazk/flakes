@@ -84,43 +84,22 @@
                 plugins.lean.settings.mappings = true;
                 plugins.lean.settings.progress_bars.enable = false;
                 plugins.lualine.enable = true;
-                # plugins.lualine.settings.options.icons_enabled = false;
                 plugins.nvim-surround.enable = true;
+                plugins.treesitter = {
+                   enable = true;
+                   settings = {
+                     incremental_selection = {
+                       enable = true;
+                       keymaps = {
+                         init_selection = false;
+                         node_decrement = "]g";
+                         node_increment = "[g";
+                       };
+                     };
+                   };
+                 };
                 plugins.which-key.enable = true;
-                # plugins.which-key.settings.icons.keys = {
-                #   BS = "BS";
-                #   C = "C-";
-                #   CR = "CR";
-                #   D = "D-";
-                #   Down = "↓";
-                #   Esc = "Esc";
-                #   F1 = "F1";
-                #   F10 = "F10";
-                #   F11 = "F11";
-                #   F12 = "F12";
-                #   F2 = "F2";
-                #   F3 = "F3";
-                #   F4 = "F4";
-                #   F5 = "F5";
-                #   F6 = "F6";
-                #   F7 = "F7";
-                #   F8 = "F8";
-                #   F9 = "F9";
-                #   Left = "←";
-                #   M = "M-";
-                #   NL = "NL";
-                #   Right = "→";
-                #   S = "S-";
-                #   ScrollWheelDown = "⇣";
-                #   ScrollWheelUp = "⇡";
-                #   Space = "SPC";
-                #   Tab = "TAB";
-                #   Up = "↑";
-                # };
-                # plugins.which-key.settings.icons.rules = false;
-                # plugins.tree-sitter.enable = true;
                 # plugins.treesitter-textobjects.enable = true;
-
               };
             };
           })
