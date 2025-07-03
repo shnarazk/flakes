@@ -43,6 +43,7 @@
                 ];
                 opts = {
                   background = "light";
+                  cursorline = true;
                   termguicolors = true;
                 };
                 plugins.blink-cmp = {
@@ -99,7 +100,18 @@
                        };
                      };
                    };
-                 };
+                };
+                plugins.visual-multi = {
+                  enable = true;
+                  settings = {
+                    default_mappings = 1;
+                    maps = {
+                      "Add Cursor Down" = "<S-c>";
+                      "Add Cursor Up" = "<S-C-c>";
+                    };
+                    mouse_mapping = 0;
+                  };
+                };
                 plugins.which-key.enable = true;
                 # plugins.treesitter-textobjects.enable = true;
               };
