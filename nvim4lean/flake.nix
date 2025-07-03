@@ -37,7 +37,7 @@
                     lspBufAction = "implementation";
                   }
                   {
-                    key = "k";
+                    key = "<leader>k";
                     lspBufAction = "hover";
                   }
                 ];
@@ -49,6 +49,8 @@
                   enable = true;
                   settings.keymap = {
                     preset = "enter";
+                    "<Up>" = ["select_prev" "fallback"];
+                    "<Down>" = ["select_next" "fallback"];
                   };
                   settings.sources = {
                     default = [
@@ -86,7 +88,7 @@
                 plugins.lualine.enable = true;
                 plugins.nvim-surround.enable = true;
                 plugins.treesitter = {
-                   enable = true;
+                   enable = false;
                    settings = {
                      incremental_selection = {
                        enable = true;
