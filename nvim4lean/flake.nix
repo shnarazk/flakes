@@ -103,7 +103,7 @@
                                 if ok and stat.total ~= nil then
                                   return " " .. stat.total .. " sel"
                                 end
-                                return "none"
+                                return ""
                               end
                             '';
                           };
