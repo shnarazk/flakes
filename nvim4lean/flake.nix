@@ -86,7 +86,35 @@
                 plugins.lean.autoLoad = true;
                 plugins.lean.settings.mappings = true;
                 plugins.lean.settings.progress_bars.enable = false;
-                plugins.lualine.enable = true;
+                plugins.lualine = {
+            		  enable = true;
+            		  settings = {
+            		    sections = {
+              		    lualine_a = ["mode"];
+              		    lualine_b = ["branch" "diff" "diagnostics"];
+              		    lualine_c = ["filename"];
+              		    lualine_x = [
+              		      "diagnostics"
+                        {
+                          __unkeyed-1 = {
+                            __raw = ''
+                              function()
+                                local ok, stat = pcall(vim.fn.VMInfos)
+                                if ok and stat.total ~= nil then
+                                  return " " .. stat.total .. " sel"
+                                end
+                                return "none"
+                              end
+                            '';
+                          };
+                          # icon = "";
+                        }
+                      ];
+              		    lualine_y = ["filetype"];
+                	    lualine_z = ["location"];
+              	    };
+            		  };
+            		};
                 plugins.nvim-surround.enable = true;
                 plugins.treesitter = {
                    enable = false;
