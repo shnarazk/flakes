@@ -23,22 +23,32 @@
                   {
                     key = "gd";
                     lspBufAction = "definition";
+                    options.desc = "Go to Definition";
                   }
                   {
                     key = "gD";
                     lspBufAction = "references";
+                    options.desc = "Go to Reference";
                   }
                   {
                     key = "gt";
                     lspBufAction = "type_definition";
+                    options.desc = "Go to Type Definition";
                   }
                   {
                     key = "gi";
                     lspBufAction = "implementation";
+                    options.desc = "Go to Implementation";
                   }
                   {
                     key = "<leader>k";
                     lspBufAction = "hover";
+                    options.desc = "Symbol info";
+                  }
+                  {
+                    key = "<leader>r";
+                    lspBufAction = "rename";
+                    options.desc = "Rename symbol";
                   }
                 ];
                 opts = {
