@@ -1,6 +1,5 @@
 {
   description = "my nixvim configuration for Lean4";
-  # inputs.nixpkgs.url = "github:NixOS/nixpkgs";
   inputs.nixvim.url = "github:nix-community/nixvim";
 
   outputs =
@@ -18,6 +17,51 @@
                   mapleader = " ";
                   maplocalleader = "  ";
                 };
+                keymaps = [
+                  # Insert mode Emacs-like movement
+                  {
+                    mode = "i";
+                    key = "<C-b>";
+                    action = "<Left>";
+                    options.desc = "Emacs-like: Move left";
+                  }
+                  {
+                    mode = "i";
+                    key = "<C-f>";
+                    action = "<Right>";
+                    options.desc = "Emacs-like: Move right";
+                  }
+                  {
+                    mode = "i";
+                    key = "<C-a>";
+                    action = "<Home>";
+                    options.desc = "Emacs-like: Beginning of line";
+                  }
+                  {
+                    mode = "i";
+                    key = "<C-e>";
+                    action = "<End>";
+                    options.desc = "Emacs-like: End of line";
+                  }
+                  {
+                    mode = "i";
+                    key = "<C-p>";
+                    action = "<Up>";
+                    options.desc = "Emacs-like: Move up";
+                  }
+                  {
+                    mode = "i";
+                    key = "<C-n>";
+                    action = "<Down>";
+                    options.desc = "Emacs-like: Move down";
+                  }
+                  {
+                    mode = "i";
+                    key = "<C-d>";
+                    action = "<Del>";
+                    options.desc = "Emacs-like: Delete character";
+                  }
+                ];
                 lsp.inlayHints.enable = true;
                 lsp.keymaps = [
                   {
