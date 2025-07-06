@@ -61,6 +61,12 @@
                     action = "<Del>";
                     options.desc = "Emacs-like: Delete character";
                   }
+                  {
+                    mode = "n";
+                    key = "U";
+                    action = "<C-r>";
+                    options.desc = "Redo";
+                  }
                 ];
                 lsp.inlayHints.enable = true;
                 lsp.keymaps = [
