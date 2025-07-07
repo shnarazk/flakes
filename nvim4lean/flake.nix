@@ -13,6 +13,10 @@
               default = nixvim.legacyPackages.${system}.makeNixvim {
                 colorschemes.gruvbox.enable = true;
                 dependencies.lean.enable = false;
+                extraConfigLua = ''
+                  vim.cmd('cabbrev bc bd')
+                  vim.cmd('cabbrev o edit')
+                '';
                 globals = {
                   mapleader = " ";
                   maplocalleader = "  ";
@@ -66,6 +70,18 @@
                     key = "U";
                     action = "<C-r>";
                     options.desc = "Redo";
+                  }
+                  {
+                    mode = "n";
+                    key = "gn";
+                    action = ":bnext<CR>";
+                    options.desc = "Goto next buffer";
+                  }
+                  {
+                    mode = "n";
+                    key = "gp";
+                    action = ":bprev<CR>";
+                    options.desc = "Goto previous buffer";
                   }
                 ];
                 lsp.inlayHints.enable = true;
