@@ -73,6 +73,12 @@
                   }
                   {
                     mode = "n";
+                    key = "ge";
+                    action = "G";
+                    options.desc = "Goto last line";
+                  }
+                  {
+                    mode = "n";
                     key = "gn";
                     action = ":bnext<CR>";
                     options.desc = "Goto next buffer";
