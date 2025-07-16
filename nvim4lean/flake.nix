@@ -11,6 +11,8 @@
             name = system;
             value = {
               default = nixvim.legacyPackages.${system}.makeNixvim {
+                pname = "nixvim";
+                version = "20250716-1";
                 colorschemes.gruvbox.enable = true;
                 dependencies.lean.enable = false;
                 extraConfigLua = ''
