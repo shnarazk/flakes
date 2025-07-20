@@ -6,9 +6,11 @@ nix registry add NAME github:shnarazk/flakes
 ```
 
 - [alacritty-head(0.14.0)](https://alacritty.org) from https://github.com/alacritty/alacritty
+- [cadical(1.5.3)](http://fmv.jku.at/cadical)
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
+- [kissat(4.0.3)](http://fmv.jku.at/kissat)
 - [tree-sitter-cli(0.24.4)](https://github.com/tree-sitter/tree-sitter)
 - [rust-parallel(1.18.1)](https://github.com/aaronriekenberg/rust-parallel)
 - [zellij-head(0.41.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
