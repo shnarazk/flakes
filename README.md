@@ -5,7 +5,6 @@ Collection of my flakes on nixpkgs
 nix registry add NAME github:shnarazk/flakes
 ```
 
-- [alacritty-head(0.14.0)](https://alacritty.org) from https://github.com/alacritty/alacritty
 - [cadical(1.5.3)](http://fmv.jku.at/cadical)
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
@@ -23,6 +22,7 @@ And some my programs or customization:
 
 ## Retired
 
+- [alacritty-head(0.14.0)](https://alacritty.org) from https://github.com/alacritty/alacritty
 - [bqnlsp(2023-05-07)](https://github.iom/shnarazk/bqnlsp) cloned from [https://git.sr.ht/~detegr/bqnlsp](https://git.sr.ht/~detegr/bqnlsp)
 - [cadical](http://fmv.jku.at/cadical) from https://github.com/arminbiere/cadical
 - [cbqn-head(devel)](https://github.com/dzaima/CBQN) w/ replxx
