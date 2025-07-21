@@ -12,12 +12,12 @@
             value = {
               default = stdenv.mkDerivation rec {
                 pname = "cadical";
-                version = "1.5.3";
+                version = "2.1.3";
                 src = fetchFromGitHub {
                  owner = "arminbiere";
                   repo = "cadical";
                   rev = "rel-${version}";
-                  sha256 = "sha256:Fpr7qutVruyonuNoJx5CkEUG3fVS8udOj6yW2O2evGw=";
+                  sha256 = "W3kO+6nVzkmJXyHJU+NZWP0oatK3gon4EWF1/03rgL4=";
                 };
                 dontAddPrefix = true;
                 installPhase = ''
