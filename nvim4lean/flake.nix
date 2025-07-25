@@ -16,6 +16,7 @@
                 extraConfigLua = ''
                   vim.cmd('cabbrev bc bd')
                   vim.cmd('cabbrev o edit')
+                  vim.cmd('set grepprg=rg\\ --vimgrep')
                 '';
                 globals = {
                   mapleader = " ";
