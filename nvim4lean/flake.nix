@@ -168,6 +168,9 @@
                 plugins.lean.enable = true;
                 plugins.lean.autoLoad = true;
                 plugins.lean.settings.mappings = true;
+                plugins.lean.settings.lsp.init_options = {
+                  editDelay = 50;
+                };
                 plugins.lean.settings.progress_bars.enable = false;
                 plugins.lualine = {
             		  enable = true;
