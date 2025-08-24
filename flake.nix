@@ -12,6 +12,7 @@
     gratchk.url = "github:shnarazk/flakes?dir=gratchk";
     gratgen.url = "github:shnarazk/flakes?dir=gratgen";
     julia-bin.url = "github:shnarazk/flakes?dir=julia-bin";
+    monaspace.url = "github:shnarazk/flakes?dir=monaspace";
     nvim4lean.url = "github:shnarazk/flakes?dir=nvim4lean";
     rust-parallel.url = "github:shnarazk/flakes?dir=rust-parallel";
     sat-bench.url = "github:shnarazk/SAT-bench";
@@ -34,6 +35,7 @@
               # gex-head           = inputs.gex-head.packages.${system}.default;
               gratgen         = inputs.gratgen.packages.${system}.default;
               julia-bin       = inputs.julia-bin.packages.${system}.default;
+              monaspace       = inputs.monaspace.packages.${system}.default;
               nvim4lean       = inputs.nvim4lean.packages.${system}.default;
               rust-parallel   = inputs.rust-parallel.packages.${system}.default;
               sat-bench       = inputs.sat-bench.packages.${system}.default;
