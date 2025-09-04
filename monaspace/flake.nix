@@ -11,12 +11,12 @@
               name = system;
               value = {
                 default = monaspace.overrideAttrs (attrs: rec {
-                  version = "1.300";
+                  version = "1.301";
                   name = "monaspace-${version}";
                   src = fetchzip {
                     url = "https://github.com/githubnext/monaspace/releases/download/v${version}/monaspace-static-v${version}.zip";
                     stripRoot = false;
-                    hash = "sha256-2xHAB8+3lDiRlZPKy5SLZzyThbFHaS4HNpQVzE/dQZQ=";
+                    hash = "sha256-H6J4InGyXabZuslywuzNYqw14zymzF90JKxa7CikOIM=";
                   };
                   outputs = [ "out" ];
 

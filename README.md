@@ -11,6 +11,7 @@ nix registry add NAME github:shnarazk/flakes
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
 - julia-bin w/o tests
 - [kissat(4.0.3)](http://fmv.jku.at/kissat)
+- [monaspace(1.301)](https://github.com/githubnext/monaspace)
 - [tree-sitter-cli(0.24.4)](https://github.com/tree-sitter/tree-sitter)
 - [rust-parallel(1.18.1)](https://github.com/aaronriekenberg/rust-parallel)
 - [zellij-head(0.41.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
