@@ -1,5 +1,5 @@
 {
-  description = "Emacs Head, the unreleased 29.1";
+  description = "Monaspace static fonts";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs";
   outputs =
     { self, nixpkgs }:
