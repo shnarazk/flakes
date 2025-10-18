@@ -9,6 +9,7 @@ nix registry add NAME github:shnarazk/flakes
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
+- julia-bin w/o tests
 - [kissat(4.0.3)](http://fmv.jku.at/kissat)
 - [monaspace(1.301)](https://github.com/githubnext/monaspace)
 - [tree-sitter-cli(0.24.4)](https://github.com/tree-sitter/tree-sitter)
