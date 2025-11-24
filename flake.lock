@@ -46,11 +46,11 @@
       },
       "locked": {
         "dir": "gratchk",
-        "lastModified": 1763683540,
-        "narHash": "sha256-iMYpmR/T3tMQb2w0dQtL6Tq11c1yiO0jLj5+l/embiU=",
+        "lastModified": 1763963749,
+        "narHash": "sha256-vv18yPjwNFMpaK1Mm8UTbyrLj3FZsoV8LrqIWoB2u7E=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "446a56b5bfcaf56f63bfe1b47207e4d5b467ba11",
+        "rev": "2ed53ef44b04e4b183cf3fed07e766cd148187d3",
         "type": "github"
       },
       "original": {
@@ -66,11 +66,11 @@
       },
       "locked": {
         "dir": "gratgen",
-        "lastModified": 1763683540,
-        "narHash": "sha256-iMYpmR/T3tMQb2w0dQtL6Tq11c1yiO0jLj5+l/embiU=",
+        "lastModified": 1763963749,
+        "narHash": "sha256-vv18yPjwNFMpaK1Mm8UTbyrLj3FZsoV8LrqIWoB2u7E=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "446a56b5bfcaf56f63bfe1b47207e4d5b467ba11",
+        "rev": "2ed53ef44b04e4b183cf3fed07e766cd148187d3",
         "type": "github"
       },
       "original": {
@@ -116,11 +116,11 @@
       },
       "locked": {
         "dir": "monaspace",
-        "lastModified": 1763683540,
-        "narHash": "sha256-iMYpmR/T3tMQb2w0dQtL6Tq11c1yiO0jLj5+l/embiU=",
+        "lastModified": 1763963749,
+        "narHash": "sha256-vv18yPjwNFMpaK1Mm8UTbyrLj3FZsoV8LrqIWoB2u7E=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "446a56b5bfcaf56f63bfe1b47207e4d5b467ba11",
+        "rev": "2ed53ef44b04e4b183cf3fed07e766cd148187d3",
         "type": "github"
       },
       "original": {
@@ -302,11 +302,11 @@
       },
       "locked": {
         "dir": "nvim4lean",
-        "lastModified": 1763683540,
-        "narHash": "sha256-iMYpmR/T3tMQb2w0dQtL6Tq11c1yiO0jLj5+l/embiU=",
+        "lastModified": 1763963749,
+        "narHash": "sha256-vv18yPjwNFMpaK1Mm8UTbyrLj3FZsoV8LrqIWoB2u7E=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "446a56b5bfcaf56f63bfe1b47207e4d5b467ba11",
+        "rev": "2ed53ef44b04e4b183cf3fed07e766cd148187d3",
         "type": "github"
       },
       "original": {
@@ -418,11 +418,11 @@
       },
       "locked": {
         "dir": "tree-sitter-cli",
-        "lastModified": 1763683540,
-        "narHash": "sha256-iMYpmR/T3tMQb2w0dQtL6Tq11c1yiO0jLj5+l/embiU=",
+        "lastModified": 1763963749,
+        "narHash": "sha256-vv18yPjwNFMpaK1Mm8UTbyrLj3FZsoV8LrqIWoB2u7E=",
         "owner": "shnarazk",
         "repo": "flakes",
-        "rev": "446a56b5bfcaf56f63bfe1b47207e4d5b467ba11",
+        "rev": "2ed53ef44b04e4b183cf3fed07e766cd148187d3",
         "type": "github"
       },
       "original": {
