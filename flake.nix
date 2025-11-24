@@ -11,14 +11,14 @@
     # gex-head.url          = github:shnarazk/flakes?dir=gex-head;
     gratchk.url = "github:shnarazk/flakes?dir=gratchk";
     gratgen.url = "github:shnarazk/flakes?dir=gratgen";
-    julia-bin.url = "github:shnarazk/flakes?dir=julia-bin";
+    # julia-bin.url = "github:shnarazk/flakes?dir=julia-bin";
     monaspace.url = "github:shnarazk/flakes?dir=monaspace";
     nvim4lean.url = "github:shnarazk/flakes?dir=nvim4lean";
-    rust-parallel.url = "github:shnarazk/flakes?dir=rust-parallel";
+    # rust-parallel.url = "github:shnarazk/flakes?dir=rust-parallel";
     sat-bench.url = "github:shnarazk/SAT-bench";
     splr.url = "github:shnarazk/splr";
     tree-sitter-cli.url = "github:shnarazk/flakes?dir=tree-sitter-cli";
-    zellij-head.url = "github:shnarazk/flakes?dir=zellij-head";
+    # zellij-head.url = "github:shnarazk/flakes?dir=zellij-head";
   };
   outputs = inputs: {
     packages = builtins.listToAttrs (
@@ -34,14 +34,14 @@
               # fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
               # gex-head           = inputs.gex-head.packages.${system}.default;
               gratgen         = inputs.gratgen.packages.${system}.default;
-              julia-bin       = inputs.julia-bin.packages.${system}.default;
+              # julia-bin       = inputs.julia-bin.packages.${system}.default;
               monaspace       = inputs.monaspace.packages.${system}.default;
               nvim4lean       = inputs.nvim4lean.packages.${system}.default;
-              rust-parallel   = inputs.rust-parallel.packages.${system}.default;
+              # rust-parallel   = inputs.rust-parallel.packages.${system}.default;
               sat-bench       = inputs.sat-bench.packages.${system}.default;
               splr            = inputs.splr.packages.${system}.default;
               tree-sitter-cli = inputs.tree-sitter-cli.packages.${system}.default;
-              zellij-head     = inputs.zellij-head.packages.${system}.default;
+              # zellij-head     = inputs.zellij-head.packages.${system}.default;
             }
             // (
               if system == "x86_64-darwin" || system == "x86_64-linux" then

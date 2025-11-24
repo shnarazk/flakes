@@ -9,12 +9,9 @@ nix registry add NAME github:shnarazk/flakes
 - [cargo-instruments](https://github.com/cmyr/cargo-instruments)
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
-- julia-bin w/o tests
 - [kissat(4.0.3)](http://fmv.jku.at/kissat)
 - [monaspace(1.301)](https://github.com/githubnext/monaspace)
 - [tree-sitter-cli(0.24.4)](https://github.com/tree-sitter/tree-sitter)
-- [rust-parallel(1.18.1)](https://github.com/aaronriekenberg/rust-parallel)
-- [zellij-head(0.41.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
 
 And some my programs or customization:
 
@@ -31,5 +28,8 @@ And some my programs or customization:
 - [emacs-head(29.0.92)](https://www.gnu.org/software/emacs/) with native compilation/tree-sitter from https://git.savannah.gnu.org/cgit/emacs.git
 - [fukuoka-c19.rs](https://github.com/shnarazk/fukuoka-c19.rs)
 - [gex-head(0.3.8)](https://github.com/Piturnah/gex)
+- julia-bin w/o tests
 - [kissat](http://fmv.jku.at/kissat) was merged into nixpkgs
+- [rust-parallel(1.18.1)](https://github.com/aaronriekenberg/rust-parallel)
 - [uiua(0.0.5dev)](https://www.uiua.org) the upstream provides flake.nix
+- [zellij-head(0.41.2)](https://zellij.dev) from https://github.com/zellij-org/zellij
