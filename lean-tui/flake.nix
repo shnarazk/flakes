@@ -22,7 +22,7 @@
                   };
 
                   buildInputs = [ ]
-                    ++ lib.optional stdenv.isDarwin [
+                    ++ lib.optionals stdenv.isDarwin [
                       darwin.apple_sdk.frameworks.CoreServices
                       darwin.apple_sdk.frameworks.Security
                     ];
