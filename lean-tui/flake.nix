@@ -21,11 +21,7 @@
                     hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
                   };
 
-                  buildInputs = [ ]
-                    ++ lib.optional stdenv.isDarwin [
-                      darwin.apple_sdk.frameworks.CoreServices
-                      darwin.apple_sdk.frameworks.Security
-                    ];
+                  buildInputs = [ ];
                   doCheck = false;
                   # TODO: Update cargoHash - Nix will provide the correct hash when you first try to build
                   cargoHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
