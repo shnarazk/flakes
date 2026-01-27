@@ -12,10 +12,12 @@
               value = {
                 default = rustPlatform.buildRustPackage rec {
                   pname = "lean-tui";
+                  # TODO: Update version to the latest version from crates.io
                   version = "0.1.0";
 
                   src = fetchCrate {
                     inherit pname version;
+                    # TODO: Update hash - use `nix-prefetch-url --unpack https://crates.io/api/v1/crates/${pname}/${version}/download`
                     hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
                   };
 
@@ -25,6 +27,7 @@
                       darwin.apple_sdk.frameworks.Security
                     ];
                   doCheck = false;
+                  # TODO: Update cargoHash - Nix will provide the correct hash when you first try to build
                   cargoHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
                   meta = with lib; {
                     description = "A TUI for Lean theorem prover";
