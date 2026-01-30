@@ -10,7 +10,7 @@ nix registry add NAME github:shnarazk/flakes
 - [gratchk](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratchk-sml.tgz
 - [gratgen](https://www21.in.tum.de/~lammich/grat/) from https://www21.in.tum.de/~lammich/grat/gratgen.tgz
 - [kissat(4.0.3)](http://fmv.jku.at/kissat)
-- [lean-tui(0.0.9)](https://crates.io/crates/lean-tui)
+- [lean-tui(0.0.10)](https://crates.io/crates/lean-tui)
 - [monaspace(1.301)](https://github.com/githubnext/monaspace)
 - [tree-sitter-cli(0.24.4)](https://github.com/tree-sitter/tree-sitter)
 

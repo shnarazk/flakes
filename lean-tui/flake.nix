@@ -12,16 +12,16 @@
               value = {
                 default = rustPlatform.buildRustPackage rec {
                   pname = "lean-tui";
-                  version = "0.0.9";
+                  version = "0.0.10";
 
                   src = fetchCrate {
                     inherit pname version;
-                    hash = "sha256-TL0IY1GTfDVN7WJomM70uA/Z5u+BDah4YmcsPuQGXFo=";
+                    hash = "sha256-4MJPA5UHMRpGeMB2ZHN2rtNAi9TGcfdtrv/TUQOPQmE=";
                   };
 
                   buildInputs = [ ];
                   doCheck = false;
-                  cargoHash = "sha256-nHooVq+r8ZZQbfDvsXAnbPxvypCGTWJjbkRoWClVtMU=";
+                  cargoHash = "sha256-sXybavtkT/hBWpicY0w4YOfKKo6NWsGfhytLAF0W0K0=";
                   meta = with lib; {
                     description = "A TUI for Lean theorem prover";
                     homepage = "https://crates.io/crates/lean-tui";
