@@ -29,12 +29,13 @@
           value =
             {
               # alacritty-head = inputs.alacritty-head.packages.${system}.default;
-              # bqnlsp             = inputs.bqnlsp.packages.${system}.default;
-              # cbqn-head          = inputs.cbqn-head.packages.${system}.default;
-              # emacs-head         = inputs.emacs-head.packages.${system}.default;
-              # fukuoka-c19        = inputs.fukuoka-c19.packages.${system}.default;
-              # gex-head           = inputs.gex-head.packages.${system}.default;
+              # bqnlsp          = inputs.bqnlsp.packages.${system}.default;
+              # cbqn-head       = inputs.cbqn-head.packages.${system}.default;
+              # emacs-head      = inputs.emacs-head.packages.${system}.default;
+              # fukuoka-c19     = inputs.fukuoka-c19.packages.${system}.default;
+              # gex-head        = inputs.gex-head.packages.${system}.default;
               gratgen         = inputs.gratgen.packages.${system}.default;
+              gratchk         = inputs.gratchk.packages.${system}.default;
               # julia-bin       = inputs.julia-bin.packages.${system}.default;
               lean-tui        = inputs.lean-tui.packages.${system}.default;
               monaspace       = inputs.monaspace.packages.${system}.default;
@@ -45,22 +46,15 @@
               tree-sitter-cli = inputs.tree-sitter-cli.packages.${system}.default;
               # zellij-head     = inputs.zellij-head.packages.${system}.default;
             }
-            // (
-              if system == "x86_64-darwin" || system == "x86_64-linux" then
-                { gratchk = inputs.gratchk.packages.${system}.default; }
-              else
-                { }
-            )
-          # // (if system == "x86_64-darwin" || system == "aarch64-darwin" then {
-          #  cargo-instruments = inputs.cargo-instruments.packages.${system}.default;
-          # } else {
-          # })
-          ;
+            # // (if system == "x86_64-darwin" || system == "aarch64-darwin" then {
+            #  cargo-instruments = inputs.cargo-instruments.packages.${system}.default;
+            # } else {
+            # })
+            ;
         })
         [
           "x86_64-linux"
           "aarch64-linux"
-          "x86_64-darwin"
           "aarch64-darwin"
         ]
     );
