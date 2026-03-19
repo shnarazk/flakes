@@ -12,13 +12,13 @@
             value = {
               default = stdenv.mkDerivation rec {
                 pname = "kissat";
-                version = "4.0.3";
+                version = "4.0.4";
                 src = fetchFromGitHub {
                  owner = "arminbiere";
                   repo = "kissat";
                   rev = "rel-${version}";
                   # rev = "abfa45fb782fa3b7c6e2eb6b939febe74d7270b7";
-                  sha256 = "IlMHtsEYafpbCNZfbeJo1JS5S5qcZQt1aDWjv+xxoqM=";
+                  sha256 = "sha256-hgB1U2Pmh1hEyNA3ej3fXxxf0YjCRgtOuSddRl6s0eo=";
                 };
                 outputs = [ "out" "dev" "lib" ];
                 checkInputs = [ drat-trim p7zip ];
@@ -68,4 +68,3 @@
     );
   };
 }
-
