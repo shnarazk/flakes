@@ -12,6 +12,7 @@
     gratchk.url = "github:shnarazk/flakes?dir=gratchk";
     gratgen.url = "github:shnarazk/flakes?dir=gratgen";
     # julia-bin.url = "github:shnarazk/flakes?dir=julia-bin";
+    kissat.url = "github:shnarazk/flakes?dir=kissat";
     lean-tui.url = "github:shnarazk/flakes?dir=lean-tui";
     monaspace.url = "github:shnarazk/flakes?dir=monaspace";
     nvim4lean.url = "github:shnarazk/flakes?dir=nvim4lean";
@@ -37,6 +38,7 @@
               gratgen         = inputs.gratgen.packages.${system}.default;
               gratchk         = inputs.gratchk.packages.${system}.default;
               # julia-bin       = inputs.julia-bin.packages.${system}.default;
+              kissat          = inputs.kissat.packages.${system}.default;
               lean-tui        = inputs.lean-tui.packages.${system}.default;
               monaspace       = inputs.monaspace.packages.${system}.default;
               nvim4lean       = inputs.nvim4lean.packages.${system}.default;
